@@ -28,10 +28,11 @@ Please contact us!
 
 Thank you!
 
-team members names
+Joanna Trojak, Sophia Bitterwolf, Tomasz Kubis, Filippo Gorlini and Iago Henrique Pires Moreira e Morais
 
 # Product Vision
 Confmark. Your Conference Landmark.
+
 Real-time overview of all necessary information about the conference at a glance presented on a screen.
 
 # Elevator Pitch
