@@ -1,11 +1,10 @@
-# Welcome to the documentation pages of our open-cx-sg wiki!
-Here you will find all information about the projects.
+# Welcome to the documentation pages of Confmark. Your Conference Landmark. open-cx-sg wiki!
+
+Here you will find all information about the (sub-)projects.
 You can find here detailed about the (sub)product, hereby mentioned as module, from a high-level vision to low-level implementation decisions, a kind of Software Development Report (see template), organized by discipline (as of RUP):
 
-#test
-
 Business modeling
-* [Product Vision](https://github.com/softeng-feup/open-cx-sg/wiki/Product-Documentation/_edit)
+* Product Vision 
 * Elevator Pitch
 
 Requirements
@@ -32,17 +31,8 @@ Thank you!
 team members names
 
 # Product Vision
-Start by defining a clear and concise vision for your module, to help members of the team, contributors, and users into focusing their often disparate views into a concise, visual, and short textual form. It provides a "high concept" of the product for marketers, developers, and managers.
-
-A product vision describes the essential of the product and sets the direction to where a product is headed, and what the product will deliver in the future.
-
-To learn more about how to write a good product vision, please see also:
-
-How To Create A Convincing Product Vision To Guide Your Team, by uxstudioteam.com
-Product Management: Product Vision, by ProductPlan
-Vision, by scrumbook.org
-How to write a vision, by dummies.com
-20 Inspiring Vision Statement Examples (2019 Updated), by lifehack.org
+Confmark. Your Conference Landmark.
+Real-time overview of all necessary information about the conference at a glance presented on a screen.
 
 # Elevator Pitch
 Draft a small text to help you quickly introduce and describe your product in a short time and a few words, a technique usually known as elevator pitch.
