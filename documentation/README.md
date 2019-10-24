@@ -5,11 +5,11 @@
 Here you will find all information about the (sub-)projects.
 You can find here details about the (sub)product, hereby mentioned as module, from a high-level vision to low-level implementation decisions, a kind of Software Development Report (see template), organized by discipline (as of RUP):
 
-Business modeling
+* Business modeling
   * [Product Vision](#Product-Vision)
   * [Elevator Pitch](#Elevator-Pitch)
 
-Requirements
+* Requirements
   * [Use Case Diagram](#Use-case-diagram)
   * [User stories](#User-stories)
   * [Domain model](#Domain-model)
@@ -33,20 +33,18 @@ Thank you!
 
 Joanna Trojak, Sophia Bitterwolf, Tomasz Kubis, Filippo Gorlini and Iago Henrique Pires Moreira e Morais
 
---
+## Business modeling
 
-## Product Vision
+### Product Vision
 Confmark. Your Conference Landmark.
 
 Real-time overview of all necessary information about the conference at a glance presented on a screen.
 
---
-
-## Elevator Pitch
+### Elevator Pitch
 
 text
 
---
+## Requirements
 
 ## Use case diagram
 Create a use-case diagram in UML with all high-level use cases possibly addressed by your module.
