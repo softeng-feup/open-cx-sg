@@ -6,11 +6,11 @@ Here you will find all information about the (sub-)projects.
 You can find here details about the (sub)product, hereby mentioned as module, from a high-level vision to low-level implementation decisions, a kind of Software Development Report (see template), organized by discipline (as of RUP):
 
 Business modeling
-  * [Product Vision] (#Product-vision)
-  * [Elevator Pitch] (#Elevator-pitch)
-
-Requirements
-  * [Use Case Diagram] (#Use-case-diagram)
+  * [Product Vision](#Product-Vision)
+  * [Elevator Pitch](#Elevator-Pitch)
+  
+* Requirements
+  * [Use Case Diagram](#Use-case-diagram)
   * [User stories](#User-stories)
   * [Domain model](#Domain-model)
 
