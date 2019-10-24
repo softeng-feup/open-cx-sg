@@ -64,7 +64,7 @@ Additionally we taged the different tasks with the labels 'priority 1-4'. Thus w
 
 #### User interface mockups. 
 The interface mockup can be found here:
-
+https://drive.google.com/open?id=1NSQIgjhsON6PNz8A21Cl78HG2lJKbUey
 
 #### Acceptance tests. 
 For each user story you should write also the acceptance tests (textually in Gherkin), i.e., a description of scenarios (situations) that will help to confirm that the system satisfies the requirements addressed by the user story.
