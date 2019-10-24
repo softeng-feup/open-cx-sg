@@ -14,7 +14,7 @@ You can find here details about the (sub)product, hereby mentioned as module, fr
   * [User stories](#User-stories)
   * [Domain model](#Domain-model)
 
-* Architecture and Design
+* [Architecture and Design](#Architecture-and-design)
   * [Logical architecture](#Logical-architecture)
   * [Physical architecture](#Physical-architecture)
   * [Prototype](#Prototype)
