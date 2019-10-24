@@ -102,11 +102,9 @@ To help on validating all the architectural, design and technological decisions 
 In this subsection please describe in more detail which, and how, user(s) story(ies) were implemented.
 
 ## Implementation
-During implementation, while not necessary, it
+Regular product increments are a good practice of product management. 
 
-It might be also useful to explain a few aspects of the code that have the greatest potential to confuse software engineers about how it works.
-
-Since the code should speak by itself, try to keep this section as short and simple as possible.
+While not necessary, sometimes it might be useful to explain a few aspects of the code that have the greatest potential to confuse software engineers about how it works. Since the code should speak by itself, try to keep this section as short and simple as possible.
 
 Use cross-links to the code repository and only embed real fragments of code when strictly needed, since they tend to become outdated very soon.
 
