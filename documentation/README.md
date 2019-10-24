@@ -47,19 +47,20 @@ Real-time overview of all necessary information about the conference at a glance
 ### User stories
 
 In order to create a user story map, we firstly collected all user stories which we want to integrate into our project.
+
 The user stories can be find here:
 https://miro.com/app/board/o9J_kw8YdVc=/
 
 The sticky notes represent the user stories. 
 
-We divited the tasks into information that is useful for the participant of the conference right now and information that is interesting for the participant in the future. 
-As a third block, we want to create something that allows an interaction between the participant and the screen.
-These three blocks are marked in blue.
+We divided the tasks into 'information to know as soon as possible', meaning that the information is useful for the participant of the conference right now and 'information useful for later the day'.
+As a third block, we try to create something that allows an interaction between the participant and the screen - 'Interaction with the screen'.
+The three blocks are marked in blue.
 
 Each of these blue blocks contain different subtasks that must be fulfilled. These are marked in yellow.
-Below every subtasks we collected the tasks that must be fulfiled in order to implement the task.
+Below every subtask we collected the steps that must be fulfiled in order to implement the task.
 
-Additionally we taged the different tasks with the labels priority 1, 2, 3 or 4. Thus we know in which order we will work on the individual tasks. On top of these labels there are labels like 'in progress', 'done' or 'to-do' to know the current working status of the task.
+Additionally we taged the different tasks with the labels 'priority 1-4'. Thus we know in which order we will work on the individual tasks. On top of these labels there are labels like 'in progress', 'done' or 'to-do'. This shows us the current working status of the task.
 
 #### User interface mockups. 
 The interface mockup can be found here:
