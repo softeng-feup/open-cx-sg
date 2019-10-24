@@ -3,7 +3,7 @@
 # Welcome to the documentation pages of Confmark. Your Conference Landmark. **openCX**!
 
 Here you will find all information about the (sub-)projects.
-You can find here detailed information about the (sub)product, hereby mentioned as module, from a high-level vision to low-level implementation decisions, a kind of Software Development Report (see template), organized by discipline (as of RUP):
+You can find here details about the (sub)product, hereby mentioned as module, from a high-level vision to low-level implementation decisions, a kind of Software Development Report (see template), organized by discipline (as of RUP):
 
 Business modeling
 * [Product Vision] (#Product-Vision)
