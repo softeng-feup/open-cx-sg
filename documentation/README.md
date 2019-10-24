@@ -67,9 +67,10 @@ The interface mockup can be found here:
 https://drive.google.com/open?id=1NSQIgjhsON6PNz8A21Cl78HG2lJKbUey
 
 #### Acceptance tests. 
-For each user story you should write also the acceptance tests (textually in Gherkin), i.e., a description of scenarios (situations) that will help to confirm that the system satisfies the requirements addressed by the user story.
+The scenarios of the acceptance tests can be found here: 
+https://docs.google.com/document/d/19Oh2CPSlyLhVsH65iyrFKrGMntYt6AbZ7Bw0rdgcYr4/edit?usp=sharing
 
-Value and effort. At the end, it is good to add a rough indication of the value of the user story to the customers (e.g. MoSCoW method) and the team should add an estimation of the effort to implement it, for example, using t-shirt sizes (XS, S, M, L, XL).
+Currently we are working on the must have scenarios, things which are the most crucial to the user. 
 
 ### Domain model
 To better understand the context of the software system, it is very useful to have a simple UML class diagram with all the key concepts (names, attributes) and relationships involved of the problem domain addressed by your module.
