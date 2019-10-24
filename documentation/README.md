@@ -6,8 +6,8 @@ Here you will find all information about the (sub-)projects.
 You can find here details about the (sub)product, hereby mentioned as module, from a high-level vision to low-level implementation decisions, a kind of Software Development Report (see template), organized by discipline (as of RUP):
 
 Business modeling
-* [Product Vision] (#Product-Vision)
-* [Elevator Pitch] (#Elevator-Pitch)
+  * [Product Vision] (#Product-Vision)
+  * [Elevator Pitch] (#Elevator-Pitch)
 
 Requirements
   * [Use Case Diagram] (#Use-case-diagram)
@@ -33,12 +33,12 @@ Thank you!
 
 Joanna Trojak, Sophia Bitterwolf, Tomasz Kubis, Filippo Gorlini and Iago Henrique Pires Moreira e Morais
 
-# Product Vision
+## Product Vision
 Confmark. Your Conference Landmark.
 
 Real-time overview of all necessary information about the conference at a glance presented on a screen.
 
-# Elevator Pitch
+## Elevator Pitch
 Draft a small text to help you quickly introduce and describe your product in a short time and a few words, a technique usually known as elevator pitch.
 
 Take a look at the following links to learn some techniques:
@@ -68,7 +68,7 @@ Normal Flow. Provide a detailed description of the user actions and system respo
 
 Alternative Flows and Exceptions. Document other, legitimate usage scenarios that can take place within this use case, stating any differences in the sequence of steps that take place. In addition, describe any anticipated error conditions that could occur during execution of the use case, and define how the system is to respond to those conditions.
 
-User stories
+##User stories
 This section will contain the requirements of the product described as user stories, organized in a global user story map with user roles or themes.
 
 For each theme, or role, you may add a small description. User stories should be detailed in the tool you decided to use for project management (e.g. trello or github projects).
@@ -79,16 +79,16 @@ As a < user role >, I want < goal > so that < reason >.
 
 INVEST in good user stories. You may add more details after, but the shorter and complete, the better. In order to decide if the user story is good, please follow the INVEST guidelines.
 
-User interface mockups. After the user story text, you should add a draft of the corresponding user interfaces, a simple mockup or draft, if applicable.
+##User interface mockups. After the user story text, you should add a draft of the corresponding user interfaces, a simple mockup or draft, if applicable.
 
-Acceptance tests. For each user story you should write also the acceptance tests (textually in Gherkin), i.e., a description of scenarios (situations) that will help to confirm that the system satisfies the requirements addressed by the user story.
+##Acceptance tests. For each user story you should write also the acceptance tests (textually in Gherkin), i.e., a description of scenarios (situations) that will help to confirm that the system satisfies the requirements addressed by the user story.
 
 Value and effort. At the end, it is good to add a rough indication of the value of the user story to the customers (e.g. MoSCoW method) and the team should add an estimation of the effort to implement it, for example, using t-shirt sizes (XS, S, M, L, XL).
 
-Domain model
+##Domain model
 To better understand the context of the software system, it is very useful to have a simple UML class diagram with all the key concepts (names, attributes) and relationships involved of the problem domain addressed by your module.
 
-Architecture and Design
+##Architecture and Design
 The architecture of a software system encompasses the set of key decisions about its overall organization.
 
 A well written architecture document is brief but reduces the amount of time it takes new programmers to a project to understand the code to feel able to make modifications and enhancements.
@@ -97,7 +97,7 @@ To document the architecture requires describing the decomposition of the system
 
 In this section you should start by briefly describing the overall components of the project and their interrelations. You should also describe how you solved typical problems you may have encountered, pointing to well-known architectural and design patterns, if applicable.
 
-Logical architecture
+##Logical architecture
 The purpose of this subsection is to document the high-level logical structure of the code, using a UML diagram with logical packages, without the worry of allocating to components, processes or machines.
 
 It can be beneficial to present the system both in a horizontal or vertical decomposition:
@@ -109,12 +109,12 @@ The goal of this subsection is to document the high-level physical structure of 
 
 It should describe also the technologies considered and justify the selections made. Examples of technologies relevant for openCX are, for example, frameworks for mobile applications (Flutter vs ReactNative vs ...), languages to program with microbit, and communication with things (beacons, sensors, etc.).
 
-Prototype
+##Prototype
 To help on validating all the architectural, design and technological decisions made, we usually implement a vertical prototype, a thin vertical slice of the system.
 
 In this subsection please describe in more detail which, and how, user(s) story(ies) were implemented.
 
-Implementation
+##Implementation
 During implementation, while not necessary, it
 
 It might be also useful to explain a few aspects of the code that have the greatest potential to confuse software engineers about how it works.
@@ -123,7 +123,7 @@ Since the code should speak by itself, try to keep this section as short and sim
 
 Use cross-links to the code repository and only embed real fragments of code when strictly needed, since they tend to become outdated very soon.
 
-Test
+##Test
 There are several ways of documenting testing activities, and quality assurance in general, being the most common: a strategy, a plan, test case specifications, and test checklists.
 
 In this section it is only expected to include the following:
@@ -137,7 +137,7 @@ Configuration and change management are key activities to control change to, and
 
 For the purpose of ESOF, we will use a very simple approach, just to manage feature requests, bug fixes, and improvements, using GitHub issues and following the GitHub flow.
 
-Project management
+##Project management
 Software project management is an art and science of planning and leading software projects, in which software projects are planned, implemented, monitored and controlled.
 
 In the context of ESOF, we expect that each team adopts a project management tool capable of registering tasks, assign tasks to people, add estimations to tasks, monitor tasks progress, and therefore being able to track their projects.
