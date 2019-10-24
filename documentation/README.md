@@ -38,40 +38,32 @@ Real-time overview of all necessary information about the conference at a glance
 
 ### Elevator Pitch
 
-text
 
 ## Requirements
 
 ### Use case diagram
-Create a use-case diagram in UML with all high-level use cases possibly addressed by your module.
 
-Give each use case a concise, results-oriented name. Use cases should reflect the tasks the user needs to be able to accomplish using the system. Include an action verb and a noun.
-
-Briefly describe each use case mentioning the following:
-
-Actor. Name only the actor that will be initiating this use case, i.e. a person or other entity external to the software system being specified who interacts with the system and performs use cases to accomplish tasks.
-
-Description. Provide a brief description of the reason for and outcome of this use case, or a high-level description of the sequence of actions and the outcome of executing the use case.
-
-Preconditions and Postconditions. Include any activities that must take place, or any conditions that must be true, before the use case can be started (preconditions) and postconditions. Describe also the state of the system at the conclusion of the use case execution (postconditions).
-
-Normal Flow. Provide a detailed description of the user actions and system responses that will take place during execution of the use case under normal, expected conditions. This dialog sequence will ultimately lead to accomplishing the goal stated in the use case name and description. This is best done as a numbered list of actions performed by the actor, alternating with responses provided by the system.
-
-Alternative Flows and Exceptions. Document other, legitimate usage scenarios that can take place within this use case, stating any differences in the sequence of steps that take place. In addition, describe any anticipated error conditions that could occur during execution of the use case, and define how the system is to respond to those conditions.
 
 ### User stories
-This section will contain the requirements of the product described as user stories, organized in a global user story map with user roles or themes.
 
-For each theme, or role, you may add a small description. User stories should be detailed in the tool you decided to use for project management (e.g. trello or github projects).
+In order to create a user story map, we firstly collected all user stories which we want to integrate into our project.
+The user stories can be find here:
+https://miro.com/app/board/o9J_kw8YdVc=/
 
-A user story is a description of desired functionality told from the perspective of the user or customer. A starting template for the description of a user story is
+The sticky notes represent the user stories. 
 
-As a < user role >, I want < goal > so that < reason >.
+We divited the tasks into information that is useful for the participant of the conference right now and information that is interesting for the participant in the future. 
+As a third block, we want to create something that allows an interaction between the participant and the screen.
+These three blocks are marked in blue.
 
-INVEST in good user stories. You may add more details after, but the shorter and complete, the better. In order to decide if the user story is good, please follow the INVEST guidelines.
+Each of these blue blocks contain different subtasks that must be fulfilled. These are marked in yellow.
+Below every subtasks we collected the tasks that must be fulfiled in order to implement the task.
+
+Additionally we taged the different tasks with the labels priority 1, 2, 3 or 4. Thus we know in which order we will work on the individual tasks. On top of these labels there are labels like 'in progress', 'done' or 'to-do' to know the current working status of the task.
 
 #### User interface mockups. 
-After the user story text, you should add a draft of the corresponding user interfaces, a simple mockup or draft, if applicable.
+The interface mockup can be found here:
+
 
 #### Acceptance tests. 
 For each user story you should write also the acceptance tests (textually in Gherkin), i.e., a description of scenarios (situations) that will help to confirm that the system satisfies the requirements addressed by the user story.
