@@ -8,23 +8,19 @@ You can find here details about the (sub)product, hereby mentioned as module, fr
 * [Business modeling](#Business-modeling)
   * [Product Vision](#Product-Vision)
   * [Elevator Pitch](#Elevator-Pitch)
-
 * [Requirements](#Requirements)
   * [Use Case Diagram](#Use-case-diagram)
   * [User stories](#User-stories)
   * [Domain model](#Domain-model)
-
 * [Architecture and Design](#Architecture-and-design)
   * [Logical architecture](#Logical-architecture)
   * [Physical architecture](#Physical-architecture)
   * [Prototype](#Prototype)
-  
 * [Implementation](#Implementation)
 * [Test](#Test)
 * [Configuration and change management](#Configuration-and-change-management)
 * [Project management](#Project-management)
 
-Project management
 So far, contributions are exclusively made by the initial team, but we hope to open them to the community, in all areas and topics: requirements, technologies, development, experimentation, testing, etc.
 
 Please contact us!
