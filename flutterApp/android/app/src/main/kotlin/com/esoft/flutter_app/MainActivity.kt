@@ -1,4 +1,4 @@
-package com.esoft.codelab1
+package com.esoft.flutter_app
 
 import android.os.Bundle
 
