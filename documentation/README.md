@@ -5,21 +5,27 @@
 Here you will find all information about the (sub-)projects.
 You can find here details about the (sub)product, hereby mentioned as module, from a high-level vision to low-level implementation decisions, a kind of Software Development Report (see template), organized by discipline (as of RUP):
 
-* [Business modeling](#Business-modeling)
-  * [Product Vision](#Product-Vision)
-  * [Elevator Pitch](#Elevator-Pitch)
-* [Requirements](#Requirements)
-  * [Use Case Diagram](#Use-case-diagram)
-  * [User stories](#User-stories)
-  * [Domain model](#Domain-model)
-* [Architecture and Design](#Architecture-and-design)
-  * [Logical architecture](#Logical-architecture)
-  * [Physical architecture](#Physical-architecture)
-  * [Prototype](#Prototype)
-* [Implementation](#Implementation)
-* [Test](#Test)
-* [Configuration and change management](#Configuration-and-change-management)
-* [Project management](#Project-management)
+- [openCX-SG Development Report](#opencx-sg-development-report)
+- [Welcome to the documentation pages of Confmark. Your Conference Landmark. **openCX**!](#welcome-to-the-documentation-pages-of-confmark-your-conference-landmark-opencx)
+  - [Business modeling](#business-modeling)
+    - [Product Vision](#product-vision)
+    - [Elevator Pitch](#elevator-pitch)
+  - [Requirements](#requirements)
+    - [Use case diagram](#use-case-diagram)
+    - [User stories](#user-stories)
+      - [User interface mockups.](#user-interface-mockups)
+      - [Acceptance tests.](#acceptance-tests)
+    - [Domain model](#domain-model)
+  - [Architecture and Design](#architecture-and-design)
+    - [Logical architecture](#logical-architecture)
+    - [Physical architecture](#physical-architecture)
+    - [Prototype](#prototype)
+  - [Implementation](#implementation)
+    - [Part 1 - Python and Database](#part-1---python-and-database)
+    - [Part 2 - Flutter app](#part-2---flutter-app)
+  - [Test](#test)
+  - [Configuration and change management](#configuration-and-change-management)
+  - [Project management](#project-management)
 
 So far, contributions are exclusively made by the initial team, but we hope to open them to the community, in all areas and topics: requirements, technologies, development, experimentation, testing, etc.
 
@@ -48,8 +54,7 @@ Real-time overview of all necessary information about the conference at a glance
 
 In order to create a user story map, we firstly collected all user stories which we want to integrate into our project.
 
-The user stories can be find here:
-https://miro.com/app/board/o9J_kw8YdVc=/
+The user stories can be find [here.](https://miro.com/app/board/o9J_kw8YdVc=/)
 
 The sticky notes represent the user stories. 
 
@@ -63,12 +68,11 @@ Below every subtask we collected the steps that must be fulfiled in order to imp
 Additionally we taged the different tasks with the labels 'priority 1-4'. Thus we know in which order we will work on the individual tasks. On top of these labels there are labels like 'in progress', 'done' or 'to-do'. This shows us the current working status of the task.
 
 #### User interface mockups. 
-The interface mockup can be found here:
-https://drive.google.com/open?id=1NSQIgjhsON6PNz8A21Cl78HG2lJKbUey
+The interface mockup can be found [here.](https://drive.google.com/open?id=1NSQIgjhsON6PNz8A21Cl78HG2lJKbUey)
 
 #### Acceptance tests. 
-The scenarios of the acceptance tests can be found here: 
-https://docs.google.com/document/d/19Oh2CPSlyLhVsH65iyrFKrGMntYt6AbZ7Bw0rdgcYr4/edit?usp=sharing
+The scenarios of the acceptance tests can be found [here.](
+https://docs.google.com/document/d/19Oh2CPSlyLhVsH65iyrFKrGMntYt6AbZ7Bw0rdgcYr4/edit?usp=sharing)
 
 Currently we are working on the must have scenarios, things which are the most crucial to the user. 
 
@@ -85,38 +89,67 @@ To document the architecture requires describing the decomposition of the system
 In this section you should start by briefly describing the overall components of the project and their interrelations. You should also describe how you solved typical problems you may have encountered, pointing to well-known architectural and design patterns, if applicable.
 
 ### Logical architecture
-The purpose of this subsection is to document the high-level logical structure of the code, using a UML diagram with logical packages, without the worry of allocating to components, processes or machines.
-
-It can be beneficial to present the system both in a horizontal or vertical decomposition:
-
-horizontal decomposition may define layers and implementation concepts, such as the user interface, business logic and concepts;
-vertical decomposition can define a hierarchy of subsystems that cover all layers of implementation.
+The logical architecture can be found on a image below:
+![logical arch](img/execution_fluxogram.jpeg)
+Basicaly there are a python script updating the database every 5 mins and a flutter aplication, querryng the database and showing to users.
 
 ### Physical architecture
-The goal of this subsection is to document the high-level physical structure of the software system (machines, connections, software components installed, and their dependencies) using UML deployment diagrams or component diagrams (separate or integrated), showing the physical structure of the system.
 
-It should describe also the technologies considered and justify the selections made. Examples of technologies relevant for openCX are, for example, frameworks for mobile applications (Flutter vs ReactNative vs ...), languages to program with microbit, and communication with things (beacons, sensors, etc.).
+![logical arch](img/deploymant.jpg)
+
+
+FIrst, a python script runnin on our server querry and filter the data. Then, the data is sended to a database. The database tecnology isn't defined yet. 
+
+The user interface is writen in flutter. Its a basic aplication to show the data in a very intuitive way. 
+
 
 ### Prototype
-To help on validating all the architectural, design and technological decisions made, we usually implement a vertical prototype, a thin vertical slice of the system.
 
-In this subsection please describe in more detail which, and how, user(s) story(ies) were implemented.
+Our prototype is a power point presentation. Our home screen is not an interactive screen. To test if our product is working, we show the mockups to some users and ask  questions about the conference. the power point presentation can be foound [here.](https://drive.google.com/file/d/1TIlCLWqFKRnGCqa5-JJgI6sePWYlmq0k/view?usp=sharing)
 
 ## Implementation
-Regular product increments are a good practice of product management. 
+Our implementation will be divided in 3 parts. The first one will be database modeling. To the app can querry data and show it without bugs, we will querry the data from presentation web site, filter and put in a NO sql database containing a Json. 
 
-While not necessary, sometimes it might be useful to explain a few aspects of the code that have the greatest potential to confuse software engineers about how it works. Since the code should speak by itself, try to keep this section as short and simple as possible.
+```java
+{ 
+        "Presentetion_title": "Lorem Ipsum" , 
+        "Speaker":"Turpis Massa",  
+        "Theme":"morbi quis commodo odio aenean", 
+        "Abstract": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "timestart" : "DD/MM/AAAA-HH:MM",
+        "timeend"   : "DD/MM/AAAA-HH:MM",
+        "HashTag"   : "_hash1, _hash2, _hash3" 
+};
+```
 
-Use cross-links to the code repository and only embed real fragments of code when strictly needed, since they tend to become outdated very soon.
+Then, we will divide the activities in 2 paralel branches. One is the python script and database implementatio. The second part is the interface implementation in flutter. 
+
+
+### Part 1 - Python and Database
+* Querry data from web
+* Make a class with useful functions to deal with data format
+* Make a database connector class
+* implement the database
+* implement tools to test the database, querryng data and printing it
+* Make a doccumentation about the script and the tools
+
+### Part 2 - Flutter app 
+
+* Make the widget class
+* Implement a homescreen showing the widgets 
+* Implement a database conector
+* process data and put it in a useful format inside aplication.
+* test interface
+* implement the automaticaly screen change every 1 minute
+* implement navigation using buttons downpage. 
+* test all functionalities
 
 ## Test
-There are several ways of documenting testing activities, and quality assurance in general, being the most common: a strategy, a plan, test case specifications, and test checklists.
 
-In this section it is only expected to include the following:
+The test, in ourr cases is something simple. Basicaly, the interface has to change the info page every 1 minute. The information has to be clear and easy to see and read. 
 
-test plan describing the list of features to be tested and the testing methods and tools;
-test case specifications to verify the functionalities, using unit tests and acceptance tests.
-A good practice is to simplify this, avoiding repetitions, and automating the testing actions as much as possible.
+Then, the tree butosn will be teste. When clicked, the screen has to change, and go to cerresponding button screen.
+
 
 ## Configuration and change management
 Configuration and change management are key activities to control change to, and maintain the integrity of, a project’s artifacts (code, models, documents).
