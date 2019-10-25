@@ -50,11 +50,15 @@ Real-time overview of all necessary information about the conference at a glance
 ### Use case diagram
 
 
+![Use cases diagram](img/use_cases.jpg)
+
 ### User stories
 
 In order to create a user story map, we firstly collected all user stories which we want to integrate into our project.
 
 The user stories can be find [here.](https://miro.com/app/board/o9J_kw8YdVc=/)
+The user stories can be find here:
+https://miro.com/welcomeonboard/dmalSTGf8X3p5T2v4VESbecJT38uOLtBqfenEw2bFrV42k8iQbFQ806nvdHeUL4v
 
 The sticky notes represent the user stories. 
 
