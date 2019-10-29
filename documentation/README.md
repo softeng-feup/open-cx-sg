@@ -57,8 +57,7 @@ Real-time overview of all necessary information about the conference at a glance
 In order to create a user story map, we firstly collected all user stories which we want to integrate into our project.
 
 The user stories can be find [here.](https://miro.com/app/board/o9J_kw8YdVc=/)
-The user stories can be find here:
-https://miro.com/welcomeonboard/dmalSTGf8X3p5T2v4VESbecJT38uOLtBqfenEw2bFrV42k8iQbFQ806nvdHeUL4v
+
 
 The sticky notes represent the user stories. 
 
@@ -94,7 +93,7 @@ In this section you should start by briefly describing the overall components of
 
 ### Logical architecture
 The logical architecture can be found on a image below:
-![logical arch](img/execution_fluxogram.jpeg)
+![logical arch](img/execution_fluxogram_style_patch.jpeg)
 Basicaly there are a python script updating the database every 5 mins and a flutter aplication, querryng the database and showing to users.
 
 ### Physical architecture
