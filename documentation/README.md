@@ -50,7 +50,7 @@ Real-time overview of all necessary information about the conference at a glance
 ### Use case diagram
 
 
-![Use cases diagram](img/use_cases.jpg)
+![Use cases diagram](img/use_cases.PNG)
 
 ### User stories
 
