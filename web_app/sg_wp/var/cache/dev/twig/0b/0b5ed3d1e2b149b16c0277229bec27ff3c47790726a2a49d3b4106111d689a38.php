@@ -40,13 +40,15 @@ class __TwigTemplate_4e71ee375c5ef59a2a7d4e6e8d27c19e89fdb3f9801140aa02a3d9c00f4
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "home/home.html.twig"));
 
         // line 1
-        echo "<!DOCTYPE html>
+        echo "<?html
+
 <html>
-<body>
-
-<img src=\"/img/homescreen.jpg\" alt=\"HomePageImage\">
-
-</body>
+<head>
+  <title>Page Title</title>
+</head>
+    <body>
+        home PAGE
+    </body>
 </html>
 ";
         
@@ -69,13 +71,15 @@ class __TwigTemplate_4e71ee375c5ef59a2a7d4e6e8d27c19e89fdb3f9801140aa02a3d9c00f4
 
     public function getSourceContext()
     {
-        return new Source("<!DOCTYPE html>
+        return new Source("<?html
+
 <html>
-<body>
-
-<img src=\"/img/homescreen.jpg\" alt=\"HomePageImage\">
-
-</body>
+<head>
+  <title>Page Title</title>
+</head>
+    <body>
+        home PAGE
+    </body>
 </html>
 ", "home/home.html.twig", "C:\\Users\\Iagoh\\Desktop\\open-cx-sg\\web_app\\sg_wp\\templates\\home\\home.html.twig");
     }

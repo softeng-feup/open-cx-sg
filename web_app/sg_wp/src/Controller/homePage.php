@@ -16,9 +16,9 @@ class homePage extends AbstractController
      */
     public function number()
     {
-        const logoPath = require('../img/home/homescreen.jpg');
+        
 
-        return $this->render('home/home.html.twig', ['image' => $logoPath,
-         ]);
+        return $this->render('home/home.html.twig');
+
     }
 }
