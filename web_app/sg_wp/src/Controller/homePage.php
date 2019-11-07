@@ -5,19 +5,20 @@ namespace App\Controller;
 use Symfony\Component\HttpFoundation\Response;
 // Use auto router 
 use Symfony\Component\Routing\Annotation\Route;
+// Use render function
+use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
-class homePage
+class homePage extends AbstractController
 {
-
+    
     /**
      * @Route("/home")
      */
     public function number()
     {
-        $number = random_int(0, 100);
+        const logoPath = require('../img/home/homescreen.jpg');
 
-        return new Response(
-            '<html><body>Lucky number: '.$number.'</body></html>'
-        );
+        return $this->render('home/home.html.twig', ['image' => $logoPath,
+         ]);
     }
 }
