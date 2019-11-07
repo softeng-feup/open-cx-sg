@@ -71,7 +71,7 @@ Below every subtask we collected the steps that must be fulfiled in order to imp
 Additionally we taged the different tasks with the labels 'priority 1-4'. Thus we know in which order we will work on the individual tasks. On top of these labels there are labels like 'in progress', 'done' or 'to-do'. This shows us the current working status of the task.
 
 #### User interface mockups. 
-The interface mockup can be found [here.](https://drive.google.com/open?id=1NSQIgjhsON6PNz8A21Cl78HG2lJKbUey)
+Our mock-up shows what our product should approximately look like in the end. ![Mock-up](Mockup-Screen1.PNG)
 
 #### Acceptance tests. 
 The scenarios of the acceptance tests can be found [here.](
@@ -107,9 +107,6 @@ The user interface is writen in flutter. Its a basic aplication to show the data
 
 
 ### Prototype
-
-Our mock-up shows what our product should approximately look like in the end. [Mock-up](Mockup-Screen1.png)
-
 
 Our home screen is not an interactive screen. To test if our product is working, we show the mockups to some users and ask  questions about the conference.
 
