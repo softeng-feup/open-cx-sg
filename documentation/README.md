@@ -71,7 +71,21 @@ Below every subtask we collected the steps that must be fulfiled in order to imp
 Additionally we taged the different tasks with the labels 'priority 1-4'. Thus we know in which order we will work on the individual tasks. On top of these labels there are labels like 'in progress', 'done' or 'to-do'. This shows us the current working status of the task.
 
 #### User interface mockups. 
-Our mock-up shows what our product should approximately look like in the end. ![Mock-up](Mockup-Screen1.PNG)
+Our mock-up shows what our product should approximately look like in the end. 
+
+![Mock-up](img/Mockup-Screen1.png)
+
+![Mock-up](img/Mockup-Screen2.png)
+
+![Mock-up](img/Mockup-Screen3.png)
+
+When showing the information online, there should additionally be buttons on the screens to navigate forward and backward .
+
+![Mock-up](img/Mockup-Laptop1.png)
+
+![Mock-up](img/Mockup-Laptop2.png)
+
+![Mock-up](img/Mockup-Laptop3.png)
 
 #### Acceptance tests. 
 The scenarios of the acceptance tests can be found [here.](
