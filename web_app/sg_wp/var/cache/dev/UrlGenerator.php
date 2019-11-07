@@ -15,4 +15,7 @@ return [
     '_profiler_router' => [['token'], ['_controller' => 'web_profiler.controller.router::panelAction'], [], [['text', '/router'], ['variable', '/', '[^/]++', 'token', true], ['text', '/_profiler']], [], []],
     '_profiler_exception' => [['token'], ['_controller' => 'web_profiler.controller.exception::showAction'], [], [['text', '/exception'], ['variable', '/', '[^/]++', 'token', true], ['text', '/_profiler']], [], []],
     '_profiler_exception_css' => [['token'], ['_controller' => 'web_profiler.controller.exception::cssAction'], [], [['text', '/exception.css'], ['variable', '/', '[^/]++', 'token', true], ['text', '/_profiler']], [], []],
+    'app_incomingevents_page' => [[], ['_controller' => 'App\\Controller\\IncomingEvents::page'], [], [['text', '/incoming']], [], []],
+    'app_currentevents_number' => [[], ['_controller' => 'App\\Controller\\currentEvents::number'], [], [['text', '/current']], [], []],
+    'app_homepage_number' => [[], ['_controller' => 'App\\Controller\\homePage::number'], [], [['text', '/home']], [], []],
 ];
