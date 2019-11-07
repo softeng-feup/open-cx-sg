@@ -79,13 +79,18 @@ Our mock-up shows what our product should approximately look like in the end.
 
 ![Mock-up](img/Mockup-Screen3.png)
 
-When showing the information online, there should additionally be buttons on the screens to navigate forward and backward .
+When showing the information online, there should additionally be buttons on the screens to navigate forward and backward.
+
 
 ![Mock-up](img/Mockup-Laptop1.png)
 
 ![Mock-up](img/Mockup-Laptop2.png)
 
 ![Mock-up](img/Mockup-Laptop3.png)
+
+An additional idea was that the participants of the conference could tweet something online and it would be directly shown on the screen. However, this is not the focus of our project and will only be implemented at the end, if capacity is still available.
+
+![Mock-up](img/Mockup-SocialMedia.png)
 
 #### Acceptance tests. 
 The scenarios of the acceptance tests can be found [here.](
