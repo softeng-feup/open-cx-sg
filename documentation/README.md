@@ -108,7 +108,10 @@ The user interface is writen in flutter. Its a basic aplication to show the data
 
 ### Prototype
 
-Our prototype is a power point presentation. Our home screen is not an interactive screen. To test if our product is working, we show the mockups to some users and ask  questions about the conference. the power point presentation can be foound [here.](https://drive.google.com/file/d/1TIlCLWqFKRnGCqa5-JJgI6sePWYlmq0k/view?usp=sharing)
+Our mock-up shows what our product should approximately look like in the end. [Mock-up](Mockup-Screen1.png)
+
+
+Our home screen is not an interactive screen. To test if our product is working, we show the mockups to some users and ask  questions about the conference.
 
 ## Implementation
 Our implementation will be divided in 3 parts. The first one will be database modeling. To the app can querry data and show it without bugs, we will querry the data from presentation web site, filter and put in a NO sql database containing a Json. 
