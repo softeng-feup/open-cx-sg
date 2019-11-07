@@ -57,6 +57,7 @@ Real-time overview of all necessary information about the conference at a glance
 In order to create a user story map, we firstly collected all user stories which we want to integrate into our project.
 
 The user stories can be find [here.](https://miro.com/app/board/o9J_kw8YdVc=/)
+![User-story](img/User-story.png)
 
 
 The sticky notes represent the user stories. 
