@@ -45,13 +45,25 @@ class __TwigTemplate_83db3a78d38052275e81d41935b8110d67d12e1f31edfe1424ed11efe7f
 <html>
 <head>
   <title>Page Title</title>
+    <link rel=\"stylesheet\" href=\"https://unpkg.com/leaflet@1.5.1/dist/leaflet.css\"
+          integrity=\"sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==\"
+          crossorigin=\"\"/>
+    <script src=\"https://unpkg.com/leaflet@1.5.1/dist/leaflet.js\"
+            integrity=\"sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og==\"
+            crossorigin=\"\"></script>
+    <link rel=\"stylesheet\" href=\"";
+        // line 12
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("css/main.css"), "html", null, true);
+        echo "\" />
+
 </head>
     <body>
-        home PAGE
-        <img src=\"";
-        // line 9
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/CIPA001.jpg"), "html", null, true);
-        echo "\" alt=\"Symfony!\"/>
+        <h1>Home Page</h1>
+        <div id=\"mapid\"></div>
+        <script src=\"";
+        // line 18
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("js/map.js"), "html", null, true);
+        echo "\"></script>
     </body>
 </html>
 ";
@@ -75,7 +87,7 @@ class __TwigTemplate_83db3a78d38052275e81d41935b8110d67d12e1f31edfe1424ed11efe7f
 
     public function getDebugInfo()
     {
-        return array (  53 => 9,  43 => 1,);
+        return array (  65 => 18,  56 => 12,  43 => 1,);
     }
 
     public function getSourceContext()
@@ -85,10 +97,19 @@ class __TwigTemplate_83db3a78d38052275e81d41935b8110d67d12e1f31edfe1424ed11efe7f
 <html>
 <head>
   <title>Page Title</title>
+    <link rel=\"stylesheet\" href=\"https://unpkg.com/leaflet@1.5.1/dist/leaflet.css\"
+          integrity=\"sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==\"
+          crossorigin=\"\"/>
+    <script src=\"https://unpkg.com/leaflet@1.5.1/dist/leaflet.js\"
+            integrity=\"sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og==\"
+            crossorigin=\"\"></script>
+    <link rel=\"stylesheet\" href=\"{{ asset('css/main.css') }}\" />
+
 </head>
     <body>
-        home PAGE
-        <img src=\"{{ asset('images/CIPA001.jpg') }}\" alt=\"Symfony!\"/>
+        <h1>Home Page</h1>
+        <div id=\"mapid\"></div>
+        <script src=\"{{ asset('js/map.js') }}\"></script>
     </body>
 </html>
 ", "home/home.html.twig", "C:\\Users\\Operator1\\Documents\\GitHub\\open-cx-sg1\\open-cx-sg\\web_app\\sg_wp\\templates\\home\\home.html.twig");
