@@ -58,10 +58,12 @@ class __TwigTemplate_83db3a78d38052275e81d41935b8110d67d12e1f31edfe1424ed11efe7f
 
 </head>
     <body>
-        <h1>Home Page</h1>
+    <div id=\"header\">
+        <h1>Get Your Welcome Pack</h1>
+    </div>
         <div id=\"mapid\"></div>
         <script src=\"";
-        // line 18
+        // line 20
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("js/map.js"), "html", null, true);
         echo "\"></script>
     </body>
@@ -87,7 +89,7 @@ class __TwigTemplate_83db3a78d38052275e81d41935b8110d67d12e1f31edfe1424ed11efe7f
 
     public function getDebugInfo()
     {
-        return array (  65 => 18,  56 => 12,  43 => 1,);
+        return array (  67 => 20,  56 => 12,  43 => 1,);
     }
 
     public function getSourceContext()
@@ -107,7 +109,9 @@ class __TwigTemplate_83db3a78d38052275e81d41935b8110d67d12e1f31edfe1424ed11efe7f
 
 </head>
     <body>
-        <h1>Home Page</h1>
+    <div id=\"header\">
+        <h1>Get Your Welcome Pack</h1>
+    </div>
         <div id=\"mapid\"></div>
         <script src=\"{{ asset('js/map.js') }}\"></script>
     </body>
