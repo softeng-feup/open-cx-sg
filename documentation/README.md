@@ -43,7 +43,7 @@ Confmark. Your Conference Landmark.
 Real-time overview of all necessary information about the conference at a glance presented on a screen.
 
 ### Elevator Pitch
-Participants of a conference are often frustrated by the effort it takes to find the right room, remember when presentations start and if there is still a place for them. Confmark. Your Conference Landmark. solves this problem by providing all necessary information about the conference. With Confmark participants can find the available number of free seats, the room number, the timeslots as well as a short description of the lecturer and the presentation. A map of the building shows where to find sanitary facilities and all additional services. Our solution can be either accessed online or directly at the day of the conference on a big screen in the entrance hall. As the information is always up-to-date participants of the conference save time by always knowing where to go at which time. 
+Participants of a conference are often frustrated by the effort it takes to find the right room, remember when presentations start and if there is still a place for them. Confmark solves this problem by providing all necessary information about the conference. With Confmark participants can find the available number of free seats, the room number, the timeslots as well as a short description of the lecturer and the presentation. A map of the building shows where to find sanitary facilities and all additional services. Our solution can be either accessed online or directly at the day of the conference on a big screen in the entrance hall. As the information is always up-to-date participants of the conference save time by always knowing where to go at which time. 
 Confmark makes the conference stay as comfortable as possible.
 
 ## Requirements
@@ -170,9 +170,9 @@ Then, we will divide the activities in 2 paralel branches. One is the python scr
 
 ## Test
 
-The test, in ourr cases is something simple. Basicaly, the interface has to change the info page every 1 minute. The information has to be clear and easy to see and read. 
+In our case, the test can be deducted very easily. Basically, the interface has to change the info page every 1 minute. The information has to be clear and easy to see and read. 
 
-Then, the tree butosn will be teste. When clicked, the screen has to change, and go to cerresponding button screen.
+Then, the three buttons will be tested. When clicked, the screen has to change, and go to corresponding button screen.
 
 
 ## Configuration and change management
