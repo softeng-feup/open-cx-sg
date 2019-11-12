@@ -44,7 +44,7 @@ class __TwigTemplate_83db3a78d38052275e81d41935b8110d67d12e1f31edfe1424ed11efe7f
 
 <html>
 <head>
-  <title>Page Title</title>
+  <title>Home Page</title>
     <link rel=\"stylesheet\" href=\"https://unpkg.com/leaflet@1.5.1/dist/leaflet.css\"
           integrity=\"sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==\"
           crossorigin=\"\"/>
@@ -60,10 +60,14 @@ class __TwigTemplate_83db3a78d38052275e81d41935b8110d67d12e1f31edfe1424ed11efe7f
     <body>
     <div id=\"header\">
         <h1>Get Your Welcome Pack</h1>
+        <h2>";
+        // line 18
+        echo twig_escape_filter($this->env, twig_date_format_filter($this->env, "now", "m/d/Y H:i:s"), "html", null, true);
+        echo "</h2>
     </div>
         <div id=\"mapid\"></div>
         <script src=\"";
-        // line 20
+        // line 21
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("js/map.js"), "html", null, true);
         echo "\"></script>
     </body>
@@ -89,7 +93,7 @@ class __TwigTemplate_83db3a78d38052275e81d41935b8110d67d12e1f31edfe1424ed11efe7f
 
     public function getDebugInfo()
     {
-        return array (  67 => 20,  56 => 12,  43 => 1,);
+        return array (  71 => 21,  65 => 18,  56 => 12,  43 => 1,);
     }
 
     public function getSourceContext()
@@ -98,7 +102,7 @@ class __TwigTemplate_83db3a78d38052275e81d41935b8110d67d12e1f31edfe1424ed11efe7f
 
 <html>
 <head>
-  <title>Page Title</title>
+  <title>Home Page</title>
     <link rel=\"stylesheet\" href=\"https://unpkg.com/leaflet@1.5.1/dist/leaflet.css\"
           integrity=\"sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==\"
           crossorigin=\"\"/>
@@ -111,6 +115,7 @@ class __TwigTemplate_83db3a78d38052275e81d41935b8110d67d12e1f31edfe1424ed11efe7f
     <body>
     <div id=\"header\">
         <h1>Get Your Welcome Pack</h1>
+        <h2>{{ \"now\"|date(\"m/d/Y H:i:s\") }}</h2>
     </div>
         <div id=\"mapid\"></div>
         <script src=\"{{ asset('js/map.js') }}\"></script>
