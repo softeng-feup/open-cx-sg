@@ -1,8 +1,7 @@
-const mymap = L.map('mapid').setView([51.505, -0.09], 13);
-L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
-    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
-    maxZoom: 18,
-    id: 'mapbox.streets',
-    accessToken: 'your.mapbox.access.token'
-}).addTo(mymap);
-console.log(mymap);
+var map = L.map('mapid', {
+    crs: L.CRS.Simple
+}).setView([51.505, -0.09], 13);
+var bounds = [[0,0], [1000,1000]];
+var image = L.imageOverlay('open-cx-sg/web_app/sg_wp/public/js/map1.png', bounds).addTo(map);
+map.fitBounds(bounds);
+console.log(image);
