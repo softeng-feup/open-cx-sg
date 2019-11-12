@@ -43,7 +43,8 @@ Confmark. Your Conference Landmark.
 Real-time overview of all necessary information about the conference at a glance presented on a screen.
 
 ### Elevator Pitch
-
+Participants of a conference are often frustrated by the effort it takes to find the right room, remember when presentations start and if there is still a place for them. Confmark. Your Conference Landmark. solves this problem by providing all necessary information about the conference. With Confmark participants can find the available number of free seats, the room number, the timeslots as well as a short description of the lecturer and the presentation. A map of the building shows where to find sanitary facilities and all additional services. Our solution can be either accessed online or directly at the day of the conference on a big screen in the entrance hall. As the information is always up-to-date participants of the conference save time by always knowing where to go at which time. 
+Confmark makes the conference stay as comfortable as possible.
 
 ## Requirements
 
