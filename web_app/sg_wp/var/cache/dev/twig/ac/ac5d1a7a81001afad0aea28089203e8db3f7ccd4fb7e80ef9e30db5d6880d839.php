@@ -62,7 +62,7 @@ class __TwigTemplate_83db3a78d38052275e81d41935b8110d67d12e1f31edfe1424ed11efe7f
         <h1>Get Your Welcome Pack</h1>
         <h2>";
         // line 18
-        echo twig_escape_filter($this->env, twig_date_format_filter($this->env, "now", "m/d/Y H:i:s"), "html", null, true);
+        echo twig_escape_filter($this->env, twig_date_format_filter($this->env, "now", "l, m/d/Y H:i:s"), "html", null, true);
         echo "</h2>
     </div>
         <div id=\"mapid\"></div>
@@ -115,7 +115,7 @@ class __TwigTemplate_83db3a78d38052275e81d41935b8110d67d12e1f31edfe1424ed11efe7f
     <body>
     <div id=\"header\">
         <h1>Get Your Welcome Pack</h1>
-        <h2>{{ \"now\"|date(\"m/d/Y H:i:s\") }}</h2>
+        <h2>{{ \"now\"|date(\"l, m/d/Y H:i:s\") }}</h2>
     </div>
         <div id=\"mapid\"></div>
         <script src=\"{{ asset('js/map.js') }}\"></script>
