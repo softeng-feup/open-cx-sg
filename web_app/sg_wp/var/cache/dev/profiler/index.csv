@@ -108,3 +108,7 @@ bf98ea,127.0.0.1,GET,http://127.0.0.1:8000/map1.png,1573560491,,404
 084cfd,127.0.0.1,GET,http://127.0.0.1:8000/home,1573560593,,200
 8b643b,127.0.0.1,GET,http://127.0.0.1:8000/open-cx-sg/web_app/sg_wp/public/js/map1.png,1573560594,d22d97,200
 d22d97,127.0.0.1,GET,http://127.0.0.1:8000/open-cx-sg/web_app/sg_wp/public/js/map1.png,1573560594,,404
+21af15,127.0.0.1,GET,http://127.0.0.1:8000/home,1573561669,,200
+82ece9,127.0.0.1,GET,http://127.0.0.1:8000/open-cx-sg/web_app/sg_wp/public/images/Mapa.png,1573561670,ea87b2,200
+ea87b2,127.0.0.1,GET,http://127.0.0.1:8000/open-cx-sg/web_app/sg_wp/public/images/Mapa.png,1573561670,,404
+76b172,127.0.0.1,GET,http://127.0.0.1:8000/home,1573561703,,200
