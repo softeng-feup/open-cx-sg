@@ -8,7 +8,8 @@ f = open("data.txt", "w")
 
 for item in my_data: 
     itemKeys = item.keys()
-    replaceWithEmptyString = lambda string : string.replace("String", "").replace("u\'", "")
+    stringsToBeReplaced = ['String', 'Title', 'Persons', 'Abstract', 'Type', 'URL']
+    replaceWithEmptyString = lambda string : string.replace("String", "").replace("u\'", "").replace('Title', "").replace("Persons", "").replace("Abstract", "").replace("Type","").replace("URL","")
     for key in itemKeys: 
 	if isinstance(item[key], list): 
 	     f.write(key)
