@@ -196,3 +196,7 @@ This was our Trello board before the second iteration.
 Since we are in the third iteration, this is our current Trello board.
 ![ThirdIteration_PM](img/Trello3.png)
 
+Here you can find the link to our Trello Board:
+https://trello.com/b/HOnUI9bu/sg-softeng?menu=filter&filter=label:%232
+
+
