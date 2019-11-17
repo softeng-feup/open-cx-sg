@@ -181,13 +181,18 @@ Configuration and change management are key activities to control change to, and
 For the purpose of ESOF, we will use a very simple approach, just to manage feature requests, bug fixes, and improvements, using GitHub issues and following the GitHub flow.
 
 ## Project management
-The 
+We document the progress of our project in Trello. 
+There are a total of 5 iterations, each lasting two weeks. Before each iteration, we determine together which tasks we can complete during the iteration and who takes over the tasks. All tasks are added to the column 'To Do'. As soon as someone is working on the task, it is moved to the 'Doing' column. Once a task is done, it moves to the 'Done' column. In 'Useful links' we collect links we often use.
 
+This was our Trello board at the beginning of the project.
 ![Start_PM](img/Trello0.png)
 
+This was our Trello board before the first iteration.
 ![FirstIteration_PM](img/Trello1.png)
 
+This was our Trello board before the second iteration.
 ![SecondIteration_PM](img/Trello2.png)
 
+Since we are in the third iteration, this is our current Trello board.
 ![ThirdIteration_PM](img/Trello3.png)
 
