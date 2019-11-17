@@ -181,4 +181,4 @@ Configuration and change management are key activities to control change to, and
 For the purpose of ESOF, we will use a very simple approach, just to manage feature requests, bug fixes, and improvements, using GitHub issues and following the GitHub flow.
 
 ## Project management
-(img/Trello0.png)
+![Start_PM](img/Trello0.png)
