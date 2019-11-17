@@ -110,19 +110,19 @@ A well written architecture document is brief but reduces the amount of time it 
 
 To document the architecture requires describing the decomposition of the system in their parts (high-level components) and the key behaviors and collaborations between them.
 
-In this section you should start by briefly describing the overall components of the project and their interrelations. You should also describe how you solved typical problems you may have encountered, pointing to well-known architectural and design patterns, if applicable.
 
 ### Logical architecture
-The logical architecture can be found on a image below:
+This is the logical architecture of our project.
 ![logical arch](img/execution_fluxogram_style_patch.jpeg)
-Basicaly there are a python script updating the database every 5 mins and a flutter aplication, querryng the database and showing to users.
+
+Basically, there is a python script updating the database every 5 minutes and a flutter application, querrying the database and showing to users.
 
 ### Physical architecture
 
 ![logical arch](img/deploymant.jpg)
 
 
-FIrst, a python script runnin on our server querry and filter the data. Then, the data is sended to a database. The database tecnology isn't defined yet. 
+First, a python script runnin on our server querry and filter the data. Then, the data is sended to a database. The database tecnology isn't defined yet. 
 
 The user interface is writen in flutter. Its a basic aplication to show the data in a very intuitive way. 
 
