@@ -2,8 +2,14 @@ import requests as rq
 import os
 import configparser
 from cloud.querryDataFromWeb import cloud
+from cloud.PresentationObject import *
 
 
 x = cloud()
 
-print (x.get_data())
+myvar= x.get_data()
+
+for i in myvar:
+    print (i.print_object_values())
+
+
