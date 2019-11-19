@@ -40,10 +40,11 @@ Joanna Trojak, Sophia Bitterwolf, Tomasz Kubis, Filippo Gorlini and Iago Henriqu
 ### Product Vision
 Confmark. Your Conference Landmark.
 
-Real-time overview of all necessary information about the conference at a glance presented on a screen.
+Real-time overview of all necessary information about the conference at a glance presented on a screen in the entrance hall or easily on your smartphone or personal computer.
 
 ### Elevator Pitch
-
+Participants of a conference are often frustrated by the effort it takes to find the right room, remember when presentations start and if there is still a place for them. Confmark solves this problem by providing all necessary information about the conference. With Confmark participants can find the available number of free seats, the room number, the timeslots as well as a short description of the lecturer and the presentation. A map of the building shows where to find all facilities and services. Our solution can be either accessed online or directly at the day of the conference on a big screen in the entrance hall. As the information is always up-to-date participants of the conference save time by always knowing where to go at which time. 
+Confmark makes the conference stay as comfortable as possible.
 
 ## Requirements
 
@@ -57,6 +58,7 @@ Real-time overview of all necessary information about the conference at a glance
 In order to create a user story map, we firstly collected all user stories which we want to integrate into our project.
 
 The user stories can be find [here.](https://miro.com/app/board/o9J_kw8YdVc=/)
+![User-story](img/User-story.png)
 
 
 The sticky notes represent the user stories. 
@@ -71,7 +73,26 @@ Below every subtask we collected the steps that must be fulfiled in order to imp
 Additionally we taged the different tasks with the labels 'priority 1-4'. Thus we know in which order we will work on the individual tasks. On top of these labels there are labels like 'in progress', 'done' or 'to-do'. This shows us the current working status of the task.
 
 #### User interface mockups. 
-The interface mockup can be found [here.](https://drive.google.com/open?id=1NSQIgjhsON6PNz8A21Cl78HG2lJKbUey)
+Our mock-up shows what our product should approximately look like in the end. 
+
+![Mock-up](img/Mockup-Screen1.png)
+
+![Mock-up](img/Mockup-Screen2.png)
+
+![Mock-up](img/Mockup-Screen3.png)
+
+When showing the information online, there should additionally be buttons on the screens to navigate forward and backward.
+
+
+![Mock-up](img/Mockup-Laptop1.png)
+
+![Mock-up](img/Mockup-Laptop2.png)
+
+![Mock-up](img/Mockup-Laptop3.png)
+
+An additional idea was that the participants of the conference could tweet something online and it would be directly shown on the screen. However, this is not the focus of our project and will only be implemented at the end, if capacity is still available.
+
+![Mock-up](img/Mockup-SocialMedia.png)
 
 #### Acceptance tests. 
 The scenarios of the acceptance tests can be found [here.](
@@ -89,26 +110,26 @@ A well written architecture document is brief but reduces the amount of time it 
 
 To document the architecture requires describing the decomposition of the system in their parts (high-level components) and the key behaviors and collaborations between them.
 
-In this section you should start by briefly describing the overall components of the project and their interrelations. You should also describe how you solved typical problems you may have encountered, pointing to well-known architectural and design patterns, if applicable.
 
 ### Logical architecture
-The logical architecture can be found on a image below:
+This is the logical architecture of our project.
 ![logical arch](img/execution_fluxogram_style_patch.jpeg)
-Basicaly there are a python script updating the database every 5 mins and a flutter aplication, querryng the database and showing to users.
+
+Basically, there is a python script updating the database every 5 minutes and a flutter application, querrying the database and showing to users.
 
 ### Physical architecture
 
 ![logical arch](img/deploymant.jpg)
 
 
-FIrst, a python script runnin on our server querry and filter the data. Then, the data is sended to a database. The database tecnology isn't defined yet. 
+First, a python script runnin on our server querry and filter the data. Then, the data is sended to a database. The database tecnology isn't defined yet. 
 
 The user interface is writen in flutter. Its a basic aplication to show the data in a very intuitive way. 
 
 
 ### Prototype
 
-Our prototype is a power point presentation. Our home screen is not an interactive screen. To test if our product is working, we show the mockups to some users and ask  questions about the conference. the power point presentation can be foound [here.](https://drive.google.com/file/d/1TIlCLWqFKRnGCqa5-JJgI6sePWYlmq0k/view?usp=sharing)
+Our home screen is not an interactive screen. To test if our product is working, we show the mockups to some users and ask  questions about the conference.
 
 ## Implementation
 Our implementation will be divided in 3 parts. The first one will be database modeling. To the app can querry data and show it without bugs, we will querry the data from presentation web site, filter and put in a NO sql database containing a Json. 
@@ -149,9 +170,9 @@ Then, we will divide the activities in 2 paralel branches. One is the python scr
 
 ## Test
 
-The test, in ourr cases is something simple. Basicaly, the interface has to change the info page every 1 minute. The information has to be clear and easy to see and read. 
+In our case, the test can be deducted very easily. Basically, the interface has to change the info page every 1 minute. The information has to be clear and easy to see and read. 
 
-Then, the tree butosn will be teste. When clicked, the screen has to change, and go to cerresponding button screen.
+Then, the three buttons will be tested. When clicked, the screen has to change, and go to corresponding button screen.
 
 
 ## Configuration and change management
@@ -160,14 +181,22 @@ Configuration and change management are key activities to control change to, and
 For the purpose of ESOF, we will use a very simple approach, just to manage feature requests, bug fixes, and improvements, using GitHub issues and following the GitHub flow.
 
 ## Project management
-Software project management is an art and science of planning and leading software projects, in which software projects are planned, implemented, monitored and controlled.
+We document the progress of our project in Trello. 
+There are a total of 5 iterations, each lasting two weeks. Before each iteration, we determine together which tasks we can complete during the iteration and who takes over the tasks. All tasks are added to the column 'To Do'. As soon as someone is working on the task, it is moved to the 'Doing' column. Once a task is done, it moves to the 'Done' column. In 'Useful links' we collect links we often use.
 
-In the context of ESOF, we expect that each team adopts a project management tool capable of registering tasks, assign tasks to people, add estimations to tasks, monitor tasks progress, and therefore being able to track their projects.
+This was our Trello board at the beginning of the project.
+![Start_PM](img/Trello0.png)
 
-Example of tools to do this are:
+This was our Trello board before the first iteration.
+![FirstIteration_PM](img/Trello1.png)
 
-Trello.com
-Github Projects
-Pivotal Tracker
-Jira
-We recommend to use the simplest tool that can possibly work for the team.
+This was our Trello board before the second iteration.
+![SecondIteration_PM](img/Trello2.png)
+
+Since we are in the third iteration, this is our current Trello board.
+![ThirdIteration_PM](img/Trello3.png)
+
+Here you can find the link to our Trello Board:
+https://trello.com/b/HOnUI9bu/sg-softeng?menu=filter&filter=label:%232
+
+
