@@ -51,7 +51,7 @@ Confmark makes the conference stay as comfortable as possible.
 ### Use case diagram
 
 
-![Use cases diagram](img/use_cases.JPG) 
+![Use cases diagram](img/use_cases.jpg) 
 
 ### User stories
 
