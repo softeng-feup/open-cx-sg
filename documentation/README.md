@@ -185,16 +185,19 @@ We document the progress of our project in Trello.
 There are a total of 5 iterations, each lasting two weeks. Before each iteration, we determine together which tasks we can complete during the iteration and who takes over the tasks. All tasks are added to the column 'To Do'. As soon as someone is working on the task, it is moved to the 'Doing' column. Once a task is done, it moves to the 'Done' column. In 'Useful links' we collect links we often use.
 
 This was our Trello board at the beginning of the project.
-![Start_PM](img/Trello0.png)
+![Start_PM](img/iteration0.JPG)
 
 This was our Trello board before the first iteration.
-![FirstIteration_PM](img/Trello1.png)
+![FirstIteration_PM](img/iteration1.JPG)
 
 This was our Trello board before the second iteration.
-![SecondIteration_PM](img/Trello2.png)
+![SecondIteration_PM](img/iteration2.JPG)
 
-Since we are in the third iteration, this is our current Trello board.
-![ThirdIteration_PM](img/Trello3.png)
+This was our Trello board before the third iteration.
+![ThirdIteration_PM](img/iteration3.JPG)
+
+Since we are in the fourth iteration, this is our current Trello board.
+![FourthIteration_PM](img/iteration4.JPG)
 
 Here you can find the link to our Trello Board:
 https://trello.com/b/HOnUI9bu/sg-softeng?menu=filter&filter=label:%232
