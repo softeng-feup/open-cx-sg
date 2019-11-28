@@ -48,26 +48,43 @@ class __TwigTemplate_83db3a78d38052275e81d41935b8110d67d12e1f31edfe1424ed11efe7f
     <link rel=\"stylesheet\" href=\"https://unpkg.com/leaflet@1.5.1/dist/leaflet.css\"
           integrity=\"sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==\"
           crossorigin=\"\"/>
+    <link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css\" integrity=\"sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T\" crossorigin=\"anonymous\">
+    <script src=\"https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js\" integrity=\"sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM\" crossorigin=\"anonymous\"></script>
     <script src=\"https://unpkg.com/leaflet@1.5.1/dist/leaflet.js\"
             integrity=\"sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og==\"
             crossorigin=\"\"></script>
     <link rel=\"stylesheet\" href=\"";
-        // line 12
+        // line 14
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("css/main.css"), "html", null, true);
         echo "\" />
 
 </head>
     <body>
-    <div id=\"header\">
-        <h1>Get Your Welcome Pack</h1>
-        <h2>";
-        // line 18
-        echo twig_escape_filter($this->env, twig_date_format_filter($this->env, "now", "l, m/d/Y H:i:s"), "html", null, true);
-        echo "</h2>
-    </div>
+    <nav class=\"navbar navbar-expand-sm bg-light\">
+        <div class=\"container-fluid\">
+            <div class=\"navbar-header\">
+                <a class=\"navbar-brand\" href=\"#\">Confmark</a>
+            </div>
+        </div>
+        <div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\">
+
+            <ul class=\"navbar-nav mr-auto\">
+
+                <li class=\"nav-item\">
+                    <h4>";
+        // line 29
+        echo twig_escape_filter($this->env, twig_date_format_filter($this->env, "now", "m/d/Y H:i:s"), "html", null, true);
+        echo "</h4>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+    <div class=\"container-fluid\">
         <div id=\"mapid\"></div>
+    </div>
         <script src=\"";
-        // line 21
+        // line 38
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("js/map.js"), "html", null, true);
         echo "\"></script>
     </body>
@@ -93,7 +110,7 @@ class __TwigTemplate_83db3a78d38052275e81d41935b8110d67d12e1f31edfe1424ed11efe7f
 
     public function getDebugInfo()
     {
-        return array (  71 => 21,  65 => 18,  56 => 12,  43 => 1,);
+        return array (  88 => 38,  76 => 29,  58 => 14,  43 => 1,);
     }
 
     public function getSourceContext()
@@ -106,6 +123,8 @@ class __TwigTemplate_83db3a78d38052275e81d41935b8110d67d12e1f31edfe1424ed11efe7f
     <link rel=\"stylesheet\" href=\"https://unpkg.com/leaflet@1.5.1/dist/leaflet.css\"
           integrity=\"sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==\"
           crossorigin=\"\"/>
+    <link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css\" integrity=\"sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T\" crossorigin=\"anonymous\">
+    <script src=\"https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js\" integrity=\"sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM\" crossorigin=\"anonymous\"></script>
     <script src=\"https://unpkg.com/leaflet@1.5.1/dist/leaflet.js\"
             integrity=\"sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og==\"
             crossorigin=\"\"></script>
@@ -113,11 +132,26 @@ class __TwigTemplate_83db3a78d38052275e81d41935b8110d67d12e1f31edfe1424ed11efe7f
 
 </head>
     <body>
-    <div id=\"header\">
-        <h1>Get Your Welcome Pack</h1>
-        <h2>{{ \"now\"|date(\"l, m/d/Y H:i:s\") }}</h2>
-    </div>
+    <nav class=\"navbar navbar-expand-sm bg-light\">
+        <div class=\"container-fluid\">
+            <div class=\"navbar-header\">
+                <a class=\"navbar-brand\" href=\"#\">Confmark</a>
+            </div>
+        </div>
+        <div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\">
+
+            <ul class=\"navbar-nav mr-auto\">
+
+                <li class=\"nav-item\">
+                    <h4>{{ \"now\"|date(\"m/d/Y H:i:s\") }}</h4>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+    <div class=\"container-fluid\">
         <div id=\"mapid\"></div>
+    </div>
         <script src=\"{{ asset('js/map.js') }}\"></script>
     </body>
 </html>
