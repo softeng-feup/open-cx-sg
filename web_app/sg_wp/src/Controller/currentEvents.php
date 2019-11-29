@@ -15,12 +15,8 @@ class currentEvents extends AbstractController
     /**
      * @Route("/current")
      */
-    public function number()
+    public function getCurrentEventsPage()
     {
-        $number = random_int(0, 100);
-
-        return new Response(
-            '<html><body>Lucky number: '.$number.'</body></html>'
-        );
+        return $this->render('current/current.html.twig');
     }
 }
