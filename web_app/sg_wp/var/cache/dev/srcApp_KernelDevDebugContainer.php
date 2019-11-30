@@ -16,6 +16,6 @@ if (!\class_exists(srcApp_KernelDevDebugContainer::class, false)) {
 
 return new \ContainerNS2MiXB\srcApp_KernelDevDebugContainer([
     'container.build_hash' => 'NS2MiXB',
-    'container.build_id' => '3603790b',
-    'container.build_time' => 1575042454,
+    'container.build_id' => '34fbeb39',
+    'container.build_time' => 1575118629,
 ], __DIR__.\DIRECTORY_SEPARATOR.'ContainerNS2MiXB');

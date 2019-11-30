@@ -12,8 +12,8 @@ use Twig\Sandbox\SecurityNotAllowedFunctionError;
 use Twig\Source;
 use Twig\Template;
 
-/* current/current.html.twig */
-class __TwigTemplate_344b1af9578381a97d6e4bfab4fff474e8ed493fb2fca0f8fc185620380bfddc extends \Twig\Template
+/* incoming/incoming.html.twig */
+class __TwigTemplate_051a854ba41997cdda3947519522e61940e41a5ad7cbddb606d9dbbe3e997394 extends \Twig\Template
 {
     private $source;
     private $macros = [];
@@ -34,10 +34,10 @@ class __TwigTemplate_344b1af9578381a97d6e4bfab4fff474e8ed493fb2fca0f8fc185620380
     {
         $macros = $this->macros;
         $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
-        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->enter($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "current/current.html.twig"));
+        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->enter($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "incoming/incoming.html.twig"));
 
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
-        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "current/current.html.twig"));
+        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "incoming/incoming.html.twig"));
 
         // line 1
         echo "<html>
@@ -76,7 +76,7 @@ class __TwigTemplate_344b1af9578381a97d6e4bfab4fff474e8ed493fb2fca0f8fc185620380
     </nav>
     <div class=\"container-fluid\">
         <table class=\"table\">
-            <thead class=\"thead-light\">
+            <thead class=\"thead-dark\">
             <tr>
                 <th scope=\"col\">#</th>
                 <th scope=\"col\">Speaker 1</th>
@@ -125,7 +125,7 @@ class __TwigTemplate_344b1af9578381a97d6e4bfab4fff474e8ed493fb2fca0f8fc185620380
 
     public function getTemplateName()
     {
-        return "current/current.html.twig";
+        return "incoming/incoming.html.twig";
     }
 
     public function isTraitable()
@@ -170,7 +170,7 @@ class __TwigTemplate_344b1af9578381a97d6e4bfab4fff474e8ed493fb2fca0f8fc185620380
     </nav>
     <div class=\"container-fluid\">
         <table class=\"table\">
-            <thead class=\"thead-light\">
+            <thead class=\"thead-dark\">
             <tr>
                 <th scope=\"col\">#</th>
                 <th scope=\"col\">Speaker 1</th>
@@ -208,6 +208,6 @@ class __TwigTemplate_344b1af9578381a97d6e4bfab4fff474e8ed493fb2fca0f8fc185620380
     </div>
 </h1>
 </body>
-</html>", "current/current.html.twig", "C:\\Users\\Operator1\\Documents\\GitHub\\open-cx-sg1\\open-cx-sg\\web_app\\sg_wp\\templates\\current\\current.html.twig");
+</html>", "incoming/incoming.html.twig", "C:\\Users\\Operator1\\Documents\\GitHub\\open-cx-sg1\\open-cx-sg\\web_app\\sg_wp\\templates\\incoming\\incoming.html.twig");
     }
 }

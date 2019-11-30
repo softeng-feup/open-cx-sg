@@ -15,10 +15,8 @@ class IncomingEvents extends AbstractController
     /**
      * @Route("/incoming")
      */
-    public function page()
+    public function getIncomingEventsPage()
     {
-            return new Response(
-            '<html><body>Example_page</body></html>'
-        );
+        return $this->render('incoming/incoming.html.twig');
     }
 }
