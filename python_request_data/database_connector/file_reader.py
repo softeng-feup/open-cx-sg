@@ -15,5 +15,6 @@ class MySqlFileReader ():
         textOnfile = myFile.read()
         commandList = textOnfile.split(';')
         commandsToReturn = [(i + ';') for i in commandList]
+        del commandsToReturn[-1]
         return commandsToReturn
         

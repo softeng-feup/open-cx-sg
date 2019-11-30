@@ -11,8 +11,6 @@ class DatabaseCreator ():
     host=''
     user=''
     password=''
-    name = ''
-
 
     def __init__ (self):
         print ('Database initialized.')
@@ -25,7 +23,6 @@ class DatabaseCreator ():
             self.host = configParser.get('database_config', 'host')
             self.user = configParser.get('database_config', 'user')
             self.password = configParser.get('database_config', 'password')
-            #self.name =  configParser.get('database_config', 'name')
             return True
         except:
             print('Get credentials failed - check database.cfg file')
@@ -44,17 +41,20 @@ class DatabaseCreator ():
             print("MySql connection error. Check credentials on database.cfg file")
             return False
 
-    def createDatabase (self):
-        if (self.testConnection()):
-            database_var = SQLC.connect(
-            host=self.host,
-            user=self.user,
-            passwd=self.password
-            ) 
-            cursor = database_var.cursor()
-            cursor.execute('CREATE DATABASE IF NOT EXISTS lala;')
-            return 'batata'
-
+    def createDatabase (self, commandsLists):
+        try:
+            if (self.testConnection()):
+                database_var = SQLC.connect(
+                host=self.host,
+                user=self.user,
+                passwd=self.password
+                ) 
+                cursor = database_var.cursor()
+                myvar = [cursor.execute(i) for i in commandsLists]
+                return myvar
+        except Exception as inst:
+            print (inst.args)
+            print('Error while running database command - Chech it manually')
     def getAllDatabases (self):
         database_var = SQLC.connect(
             host=self.host,
