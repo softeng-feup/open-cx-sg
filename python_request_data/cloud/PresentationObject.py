@@ -1,6 +1,3 @@
-
-
-
 class PresentationObject ():
     '''
     Class implemented to hold infomration about  presentations
@@ -21,5 +18,15 @@ class PresentationObject ():
         self.presentation_utl                 = myjson['URL']
         self.presentation_affiliationString   = myjson['AffiliationsString']
         self.presentation_speaker             = myjson['PersonsString']
+
+
+
+    def print_object_values(self):
+        print ('Title: {} \n Speaker: {}\n Key: {}\n URL: {}'.format(
+            self.presentation_title, 
+            self.presentation_speaker, 
+            self.presentation_key,
+            self.presentation_url))
+
 
     
