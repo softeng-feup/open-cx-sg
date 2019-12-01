@@ -2,6 +2,7 @@
 
 namespace App\Controller;
 
+use App\Entity\Presentation;
 use Symfony\Component\HttpFoundation\Response;
 // Use auto router 
 use Symfony\Component\Routing\Annotation\Route;
@@ -17,6 +18,10 @@ class IncomingEvents extends AbstractController
      */
     public function getIncomingEventsPage()
     {
-        return $this->render('incoming/incoming.html.twig');
+        $events = $this->getDoctrine()->
+        getRepository(Presentation::class)->findAll();
+        return $this->render('incoming/incoming.html.twig', [
+            'events' => $events,
+        ]);
     }
 }

@@ -3,6 +3,7 @@
 
 namespace App\Controller;
 
+use App\Entity\Presentation;
 use Symfony\Component\HttpFoundation\Response;
 // Use auto router 
 use Symfony\Component\Routing\Annotation\Route;
@@ -17,6 +18,10 @@ class currentEvents extends AbstractController
      */
     public function getCurrentEventsPage()
     {
-        return $this->render('current/current.html.twig');
+        $events = $this->getDoctrine()->
+        getRepository(Presentation::class)->findAll();
+        return $this->render('current/current.html.twig', [
+            'events' => $events,
+        ]);
     }
 }

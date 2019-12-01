@@ -66,108 +66,108 @@ class Presentation
         return $this->id;
     }
 
-    public function getIdSpeaker1(): ?int
+    public function getIdSpeaker1()
     {
         return $this->id_speaker1;
     }
 
-    public function setIdSpeaker1(?int $id_speaker1): self
+    public function setIdSpeaker1($id_speaker1)
     {
         $this->id_speaker1 = $id_speaker1;
 
         return $this;
     }
 
-    public function getIdSpeaker2(): ?int
+    public function getIdSpeaker2()
     {
         return $this->id_speaker2;
     }
 
-    public function setIdSpeaker2(?int $id_speaker2): self
+    public function setIdSpeaker2($id_speaker2)
     {
         $this->id_speaker2 = $id_speaker2;
 
         return $this;
     }
 
-    public function getIdSpeaker3(): ?int
+    public function getIdSpeaker3()
     {
         return $this->id_speaker3;
     }
 
-    public function setIdSpeaker3(?int $id_speaker3): self
+    public function setIdSpeaker3($id_speaker3)
     {
         $this->id_speaker3 = $id_speaker3;
 
         return $this;
     }
 
-    public function getIdRoom(): ?int
+    public function getIdRoom()
     {
         return $this->id_room;
     }
 
-    public function setIdRoom(?int $id_room): self
+    public function setIdRoom($id_room)
     {
         $this->id_room = $id_room;
 
         return $this;
     }
 
-    public function getTitle(): ?string
+    public function getTitle()
     {
         return $this->title;
     }
 
-    public function setTitle(?string $title): self
+    public function setTitle($title)
     {
         $this->title = $title;
 
         return $this;
     }
 
-    public function getSummary(): ?string
+    public function getSummary()
     {
         return $this->summary;
     }
 
-    public function setSummary(?string $summary): self
+    public function setSummary($summary)
     {
         $this->summary = $summary;
 
         return $this;
     }
 
-    public function getStartTime(): ?\DateTimeInterface
+    public function getStartTime()
     {
         return $this->start_time;
     }
 
-    public function setStartTime(?\DateTimeInterface $start_time): self
+    public function setStartTime( $start_time)
     {
         $this->start_time = $start_time;
 
         return $this;
     }
 
-    public function getEndTime(): ?\DateTimeInterface
+    public function getEndTime()
     {
         return $this->end_time;
     }
 
-    public function setEndTime(?\DateTimeInterface $end_time): self
+    public function setEndTime($end_time)
     {
         $this->end_time = $end_time;
 
         return $this;
     }
 
-    public function getHashtag(): ?string
+    public function getHashtag()
     {
         return $this->hashtag;
     }
 
-    public function setHashtag(?string $hashtag): self
+    public function setHashtag($hashtag)
     {
         $this->hashtag = $hashtag;
 

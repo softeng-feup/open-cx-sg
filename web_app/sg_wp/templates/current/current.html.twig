@@ -43,24 +43,20 @@
             </tr>
             </thead>
             <tbody>
-            <tr>
-                <th scope="row">1</th>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>@mdo</td>
-            </tr>
-            <tr>
-                <th scope="row">2</th>
-                <td>Jacob</td>
-                <td>Thornton</td>
-                <td>@fat</td>
-            </tr>
-            <tr>
-                <th scope="row">3</th>
-                <td>Larry</td>
-                <td>the Bird</td>
-                <td>@twitter</td>
-            </tr>
+                {% for event in events %}
+                    <tr>
+                    <td>{{ event.id }}</td>
+                    <td>{{ event.idspeaker1 }}</td>
+                    <td>{{ event.idspeaker2 }}</td>
+                    <td>{{ event.idspeaker3 }}</td>
+                    <td>{{ event.idroom }}</td>
+                    <td>{{ event.title }}</td>
+                    <td>{{ event.summary }}</td>
+                    <td>{{ event.starttime |date('Y-m-d')}}</td>
+                    <td>{{ event.endtime |date('Y-m-d')}}</td>
+                    <td>{{ event.hashtag }}</td>
+                    </tr>
+                {% endfor %}
             </tbody>
         </table>
     </div>

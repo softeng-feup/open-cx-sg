@@ -91,25 +91,61 @@ class __TwigTemplate_344b1af9578381a97d6e4bfab4fff474e8ed493fb2fca0f8fc185620380
             </tr>
             </thead>
             <tbody>
-            <tr>
-                <th scope=\"row\">1</th>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>@mdo</td>
-            </tr>
-            <tr>
-                <th scope=\"row\">2</th>
-                <td>Jacob</td>
-                <td>Thornton</td>
-                <td>@fat</td>
-            </tr>
-            <tr>
-                <th scope=\"row\">3</th>
-                <td>Larry</td>
-                <td>the Bird</td>
-                <td>@twitter</td>
-            </tr>
-            </tbody>
+                ";
+        // line 46
+        $context['_parent'] = $context;
+        $context['_seq'] = twig_ensure_traversable((isset($context["events"]) || array_key_exists("events", $context) ? $context["events"] : (function () { throw new RuntimeError('Variable "events" does not exist.', 46, $this->source); })()));
+        foreach ($context['_seq'] as $context["_key"] => $context["event"]) {
+            // line 47
+            echo "                    <tr>
+                    <td>";
+            // line 48
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["event"], "id", [], "any", false, false, false, 48), "html", null, true);
+            echo "</td>
+                    <td>";
+            // line 49
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["event"], "idspeaker1", [], "any", false, false, false, 49), "html", null, true);
+            echo "</td>
+                    <td>";
+            // line 50
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["event"], "idspeaker2", [], "any", false, false, false, 50), "html", null, true);
+            echo "</td>
+                    <td>";
+            // line 51
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["event"], "idspeaker3", [], "any", false, false, false, 51), "html", null, true);
+            echo "</td>
+                    <td>";
+            // line 52
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["event"], "idroom", [], "any", false, false, false, 52), "html", null, true);
+            echo "</td>
+                    <td>";
+            // line 53
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["event"], "title", [], "any", false, false, false, 53), "html", null, true);
+            echo "</td>
+                    <td>";
+            // line 54
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["event"], "summary", [], "any", false, false, false, 54), "html", null, true);
+            echo "</td>
+                    <td>";
+            // line 55
+            echo twig_escape_filter($this->env, twig_date_format_filter($this->env, twig_get_attribute($this->env, $this->source, $context["event"], "starttime", [], "any", false, false, false, 55), "Y-m-d"), "html", null, true);
+            echo "</td>
+                    <td>";
+            // line 56
+            echo twig_escape_filter($this->env, twig_date_format_filter($this->env, twig_get_attribute($this->env, $this->source, $context["event"], "endtime", [], "any", false, false, false, 56), "Y-m-d"), "html", null, true);
+            echo "</td>
+                    <td>";
+            // line 57
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["event"], "hashtag", [], "any", false, false, false, 57), "html", null, true);
+            echo "</td>
+                    </tr>
+                ";
+        }
+        $_parent = $context['_parent'];
+        unset($context['_seq'], $context['_iterated'], $context['_key'], $context['event'], $context['_parent'], $context['loop']);
+        $context = array_intersect_key($context, $_parent) + $_parent;
+        // line 60
+        echo "            </tbody>
         </table>
     </div>
 </h1>
@@ -135,7 +171,7 @@ class __TwigTemplate_344b1af9578381a97d6e4bfab4fff474e8ed493fb2fca0f8fc185620380
 
     public function getDebugInfo()
     {
-        return array (  70 => 23,  52 => 8,  43 => 1,);
+        return array (  148 => 60,  139 => 57,  135 => 56,  131 => 55,  127 => 54,  123 => 53,  119 => 52,  115 => 51,  111 => 50,  107 => 49,  103 => 48,  100 => 47,  96 => 46,  70 => 23,  52 => 8,  43 => 1,);
     }
 
     public function getSourceContext()
@@ -185,24 +221,20 @@ class __TwigTemplate_344b1af9578381a97d6e4bfab4fff474e8ed493fb2fca0f8fc185620380
             </tr>
             </thead>
             <tbody>
-            <tr>
-                <th scope=\"row\">1</th>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>@mdo</td>
-            </tr>
-            <tr>
-                <th scope=\"row\">2</th>
-                <td>Jacob</td>
-                <td>Thornton</td>
-                <td>@fat</td>
-            </tr>
-            <tr>
-                <th scope=\"row\">3</th>
-                <td>Larry</td>
-                <td>the Bird</td>
-                <td>@twitter</td>
-            </tr>
+                {% for event in events %}
+                    <tr>
+                    <td>{{ event.id }}</td>
+                    <td>{{ event.idspeaker1 }}</td>
+                    <td>{{ event.idspeaker2 }}</td>
+                    <td>{{ event.idspeaker3 }}</td>
+                    <td>{{ event.idroom }}</td>
+                    <td>{{ event.title }}</td>
+                    <td>{{ event.summary }}</td>
+                    <td>{{ event.starttime |date('Y-m-d')}}</td>
+                    <td>{{ event.endtime |date('Y-m-d')}}</td>
+                    <td>{{ event.hashtag }}</td>
+                    </tr>
+                {% endfor %}
             </tbody>
         </table>
     </div>
