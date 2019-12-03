@@ -55,6 +55,8 @@ class DatabaseCreator ():
         except Exception as inst:
             print (inst.args)
             print('Error while running database command - Chech it manually')
+
+            
     def getAllDatabases (self):
         database_var = SQLC.connect(
             host=self.host,
