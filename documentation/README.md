@@ -55,7 +55,7 @@ Confmark makes the conference stay as comfortable as possible.
 
 ### User stories
 
-In order to create a user story map, we firstly collected all user stories which we want to integrate into our project.
+In order to create a user story map, we firstly collected all user stories that we want to integrate into our project.
 
 The user stories can be find [here.](https://miro.com/app/board/o9J_kw8YdVc=/)
 ![User-story](img/User-story.png)
@@ -70,7 +70,7 @@ The three blocks are marked in blue.
 Each of these blue blocks contain different subtasks that must be fulfilled. These are marked in yellow.
 Below every subtask we collected the steps that must be fulfiled in order to implement the task.
 
-Additionally we taged the different tasks with the labels 'priority 1-4'. Thus we know in which order we will work on the individual tasks. On top of these labels there are labels like 'in progress', 'done' or 'to-do'. This shows us the current working status of the task.
+Additionally. we taged the different tasks with the labels 'priority 1-4'. Thus we know in which order we will work on the individual tasks. On top of these labels there are labels like 'in progress', 'done' or 'to-do'. This shows us the current working status of the task.
 
 #### User interface mockups. 
 Our mock-up shows what our product should approximately look like in the end. 
@@ -101,7 +101,7 @@ https://docs.google.com/document/d/19Oh2CPSlyLhVsH65iyrFKrGMntYt6AbZ7Bw0rdgcYr4/
 Currently we are working on the must have scenarios, things which are the most crucial to the user. 
 
 ### Domain model
-To better understand the context of the software system, it is very useful to have a simple UML class diagram with all the key concepts (names, attributes) and relationships involved of the problem domain addressed by your module.
+To better understand the context of the software system, we created a simple UML class diagram with all key concepts (names, attributes) and relationships involved of the problem domain addressed by our module.
 
 ![UML class diagram](img/UML-diagram.png)
 
@@ -117,24 +117,25 @@ To document the architecture requires describing the decomposition of the system
 This is the logical architecture of our project.
 ![logical arch](img/execution_fluxogram_style_patch.jpeg)
 
-Basically, there is a python script updating the database every 5 minutes and a flutter application, querrying the database and showing to users.
+Basically, there is a python script updating the database every 5 minutes and a flutter application, querrying the database and showing it to the users.
 
 ### Physical architecture
 
 ![logical arch](img/deploymant.jpg)
 
 
-First, a python script runnin on our server querry and filter the data. Then, the data is sended to a database. The database tecnology isn't defined yet. 
+Firstly, a python script is running on our server querry and filters the data. Then, the data is send to a database. The database technology isn't defined yet. 
 
-The user interface is writen in flutter. Its a basic aplication to show the data in a very intuitive way. 
+The user interface is written in flutter. Its a basic application to show the data in a very intuitive way. 
 
 
 ### Prototype
 
-Our home screen is not an interactive screen. To test if our product is working, we show the mockups to some users and ask  questions about the conference.
+Our home screen is no interactive screen. 
+To test our product, we showed the mockups to some users and asked them questions on what they thought and what they understood.
 
 ## Implementation
-Our implementation will be divided in 3 parts. The first one will be database modeling. To the app can querry data and show it without bugs, we will querry the data from presentation web site, filter and put in a NO sql database containing a Json. 
+Our implementation will be divided in 3 parts. The first part will be the database modeling. As soon as the application can querry the data and show it without any bugs, the application will querry data from the presentation's website, filter it and put it into a NO SQL database, containing a Json. 
 
 ```java
 { 
@@ -148,33 +149,33 @@ Our implementation will be divided in 3 parts. The first one will be database mo
 };
 ```
 
-Then, we will divide the activities in 2 paralel branches. One is the python script and database implementatio. The second part is the interface implementation in flutter. 
+Afterwards, we will divide the activities in 2 parallel branches. One branch is the python script and the database implementation, the second branch is the interface implementation in flutter. 
 
 
 ### Part 1 - Python and Database
 * Querry data from web
-* Make a class with useful functions to deal with data format
+* Make a class with useful functions to deal with the data format
 * Make a database connector class
-* implement the database
-* implement tools to test the database, querryng data and printing it
-* Make a doccumentation about the script and the tools
+* Implement the database
+* Implement the tools to test the database, querry data and print it
+* Make a documentation of the script and the tools
 
 ### Part 2 - Flutter app 
 
 * Make the widget class
 * Implement a homescreen showing the widgets 
-* Implement a database conector
-* process data and put it in a useful format inside aplication.
-* test interface
-* implement the automaticaly screen change every 1 minute
-* implement navigation using buttons downpage. 
-* test all functionalities
+* Implement a database connector
+* Process the data and put it in a useful format inside the application
+* Test the interface
+* Implement the automatically screen change every 1 minute
+* Implement the navigation using buttons
+* Test all functionalities
 
 ## Test
 
 In our case, the test can be deducted very easily. Basically, the interface has to change the info page every 1 minute. The information has to be clear and easy to see and read. 
 
-Then, the three buttons will be tested. When clicked, the screen has to change, and go to corresponding button screen.
+Then, the three buttons will be tested. When clicked, the screen has to change, and go to the corresponding screen.
 
 
 ## Configuration and change management
@@ -198,8 +199,11 @@ This was our Trello board before the second iteration.
 This was our Trello board before the third iteration.
 ![ThirdIteration_PM](img/iteration3.JPG)
 
-Since we are in the fourth iteration, this is our current Trello board.
+This was our Trello board before the fourth iteration.
 ![FourthIteration_PM](img/iteration4.png)
+
+This is our current Trello board:
+
 
 Here you can find the link to our Trello Board:
 https://trello.com/b/HOnUI9bu/sg-softeng?menu=filter&filter=label:%232
