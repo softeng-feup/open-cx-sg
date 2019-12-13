@@ -40,54 +40,40 @@ class __TwigTemplate_83db3a78d38052275e81d41935b8110d67d12e1f31edfe1424ed11efe7f
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "home/home.html.twig"));
 
         // line 1
-        echo "<?html
-
+        echo "<!DOCTYPE html>
 <html>
-<head>
-  <title>Home Page</title>
-    <link rel=\"stylesheet\" href=\"https://unpkg.com/leaflet@1.5.1/dist/leaflet.css\"
-          integrity=\"sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==\"
-          crossorigin=\"\"/>
-    <link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css\" integrity=\"sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T\" crossorigin=\"anonymous\">
-    <script src=\"https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js\" integrity=\"sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM\" crossorigin=\"anonymous\"></script>
-    <script src=\"https://unpkg.com/leaflet@1.5.1/dist/leaflet.js\"
-            integrity=\"sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og==\"
-            crossorigin=\"\"></script>
-    <link rel=\"stylesheet\" href=\"";
-        // line 14
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("css/main.css"), "html", null, true);
-        echo "\" />
-
-</head>
-    <body>
-    <nav class=\"navbar navbar-expand-sm bg-light\">
-        <div class=\"container-fluid\">
-            <div class=\"navbar-header\">
-                <a class=\"navbar-brand\" href=\"#\">Confmark</a>
-            </div>
-        </div>
-        <div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\">
-
-            <ul class=\"navbar-nav mr-auto\">
-
-                <li class=\"nav-item\">
-                    <h4>";
-        // line 29
-        echo twig_escape_filter($this->env, twig_date_format_filter($this->env, "now", "m/d/Y H:i:s"), "html", null, true);
-        echo "</h4>
-                </li>
-            </ul>
-
-        </div>
-    </nav>
-    <div class=\"container-fluid\">
-        <div id=\"mapid\"></div>
-    </div>
-        <script src=\"";
-        // line 38
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("js/map.js"), "html", null, true);
-        echo "\"></script>
-    </body>
+  <head>
+    <title>Simple Map</title>
+    <meta name=\"viewport\" content=\"initial-scale=1.0\">
+    <meta charset=\"utf-8\">
+    <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 100%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div id=\"map\"></div>
+    <script>
+      var map;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: 41.178654, lng: -8.5973233},
+          zoom: 19
+        });
+      }
+    </script>
+    <script src=\"https://maps.googleapis.com/maps/api/js?key=AIzaSyDXIVRObK-Twu-ij5WtdZ9onYObRVmxl8k&callback=initMap\"
+    async defer></script>
+  </body>
 </html>
 ";
         
@@ -103,57 +89,47 @@ class __TwigTemplate_83db3a78d38052275e81d41935b8110d67d12e1f31edfe1424ed11efe7f
         return "home/home.html.twig";
     }
 
-    public function isTraitable()
-    {
-        return false;
-    }
-
     public function getDebugInfo()
     {
-        return array (  88 => 38,  76 => 29,  58 => 14,  43 => 1,);
+        return array (  43 => 1,);
     }
 
     public function getSourceContext()
     {
-        return new Source("<?html
-
+        return new Source("<!DOCTYPE html>
 <html>
-<head>
-  <title>Home Page</title>
-    <link rel=\"stylesheet\" href=\"https://unpkg.com/leaflet@1.5.1/dist/leaflet.css\"
-          integrity=\"sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==\"
-          crossorigin=\"\"/>
-    <link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css\" integrity=\"sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T\" crossorigin=\"anonymous\">
-    <script src=\"https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js\" integrity=\"sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM\" crossorigin=\"anonymous\"></script>
-    <script src=\"https://unpkg.com/leaflet@1.5.1/dist/leaflet.js\"
-            integrity=\"sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og==\"
-            crossorigin=\"\"></script>
-    <link rel=\"stylesheet\" href=\"{{ asset('css/main.css') }}\" />
-
-</head>
-    <body>
-    <nav class=\"navbar navbar-expand-sm bg-light\">
-        <div class=\"container-fluid\">
-            <div class=\"navbar-header\">
-                <a class=\"navbar-brand\" href=\"#\">Confmark</a>
-            </div>
-        </div>
-        <div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\">
-
-            <ul class=\"navbar-nav mr-auto\">
-
-                <li class=\"nav-item\">
-                    <h4>{{ \"now\"|date(\"m/d/Y H:i:s\") }}</h4>
-                </li>
-            </ul>
-
-        </div>
-    </nav>
-    <div class=\"container-fluid\">
-        <div id=\"mapid\"></div>
-    </div>
-        <script src=\"{{ asset('js/map.js') }}\"></script>
-    </body>
+  <head>
+    <title>Simple Map</title>
+    <meta name=\"viewport\" content=\"initial-scale=1.0\">
+    <meta charset=\"utf-8\">
+    <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 100%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div id=\"map\"></div>
+    <script>
+      var map;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: 41.178654, lng: -8.5973233},
+          zoom: 19
+        });
+      }
+    </script>
+    <script src=\"https://maps.googleapis.com/maps/api/js?key=AIzaSyDXIVRObK-Twu-ij5WtdZ9onYObRVmxl8k&callback=initMap\"
+    async defer></script>
+  </body>
 </html>
 ", "home/home.html.twig", "C:\\Users\\Operator1\\Documents\\GitHub\\open-cx-sg1\\open-cx-sg\\web_app\\sg_wp\\templates\\home\\home.html.twig");
     }
