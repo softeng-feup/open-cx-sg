@@ -121,7 +121,7 @@ In order to run the API, the machine on which the application will be executed m
 
 ### Logical architecture
 This is the logical architecture of our project.
-![logical arch](img/execution_fluxogram_style_patch.jpeg)
+![logical arch](img/execution_fluxogram.jpeg)
 
 There is a python script updating the database every 5 minutes and a flutter application, querying the database and showing it to the users.
 
