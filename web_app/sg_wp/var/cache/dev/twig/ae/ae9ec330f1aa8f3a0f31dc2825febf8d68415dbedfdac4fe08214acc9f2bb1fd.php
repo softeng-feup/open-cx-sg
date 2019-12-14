@@ -482,6 +482,6 @@ class __TwigTemplate_9a2c26ca03f1d00b2e9c98b270dc19daaf17f5df7e4b92ab040adccb849
         {% endfor %}
     </table>
 {% endmacro %}
-", "@WebProfiler/Collector/events.html.twig", "C:\\Users\\Iagoh\\Desktop\\open-cx-sg\\web_app\\sg_wp\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Collector\\events.html.twig");
+", "@WebProfiler/Collector/events.html.twig", "C:\\Users\\Operator1\\Documents\\GitHub\\open-cx-sg1\\open-cx-sg\\web_app\\sg_wp\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Collector\\events.html.twig");
     }
 }

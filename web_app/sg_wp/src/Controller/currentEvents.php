@@ -20,6 +20,7 @@ class currentEvents extends AbstractController
     {
         $events = $this->getDoctrine()->
         getRepository(Presentation::class)->findAll();
+        //$speakers = $events->getSpeaker();
         return $this->render('current/current.html.twig', [
             'events' => $events,
         ]);

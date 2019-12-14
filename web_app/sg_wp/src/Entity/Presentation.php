@@ -2,6 +2,8 @@
 
 namespace App\Entity;
 
+use Doctrine\Common\Collections\ArrayCollection;
+use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -15,27 +17,6 @@ class Presentation
      * @ORM\Column(type="integer")
      */
     private $id;
-
-    /**
-     * @ORM\Column(type="integer", nullable=true)
-     */
-    private $id_speaker1;
-
-    /**
-     * @ORM\Column(type="integer", nullable=true)
-     */
-    private $id_speaker2;
-
-    /**
-     * @ORM\Column(type="integer", nullable=true)
-     */
-    private $id_speaker3;
-
-    /**
-     * @ORM\Column(type="integer", nullable=true)
-     */
-    private $id_room;
-
     /**
      * @ORM\Column(type="string", length=255, nullable=true)
      */
@@ -45,7 +26,6 @@ class Presentation
      * @ORM\Column(type="string", length=255, nullable=true)
      */
     private $summary;
-
     /**
      * @ORM\Column(type="datetime", nullable=true)
      */
@@ -61,59 +41,26 @@ class Presentation
      */
     private $hashtag;
 
+    /**
+     * @ORM\ManyToOne(targetEntity="App\Entity\Room", inversedBy="Presentations")
+     * @ORM\JoinColumn(nullable=false)
+     */
+    private $room;
+
+    /**
+     * @ORM\ManyToMany(targetEntity="App\Entity\Speaker", inversedBy="Presentations")
+     */
+    private $speaker;
+
+    public function __construct()
+    {
+        $this->speaker = new ArrayCollection();
+    }
+
     public function getId(): ?int
     {
         return $this->id;
     }
-
-    public function getIdSpeaker1()
-    {
-        return $this->id_speaker1;
-    }
-
-    public function setIdSpeaker1($id_speaker1)
-    {
-        $this->id_speaker1 = $id_speaker1;
-
-        return $this;
-    }
-
-    public function getIdSpeaker2()
-    {
-        return $this->id_speaker2;
-    }
-
-    public function setIdSpeaker2($id_speaker2)
-    {
-        $this->id_speaker2 = $id_speaker2;
-
-        return $this;
-    }
-
-    public function getIdSpeaker3()
-    {
-        return $this->id_speaker3;
-    }
-
-    public function setIdSpeaker3($id_speaker3)
-    {
-        $this->id_speaker3 = $id_speaker3;
-
-        return $this;
-    }
-
-    public function getIdRoom()
-    {
-        return $this->id_room;
-    }
-
-    public function setIdRoom($id_room)
-    {
-        $this->id_room = $id_room;
-
-        return $this;
-    }
-
     public function getTitle()
     {
         return $this->title;
@@ -170,6 +117,44 @@ class Presentation
     public function setHashtag($hashtag)
     {
         $this->hashtag = $hashtag;
+
+        return $this;
+    }
+
+    public function getRoom(): ?room
+    {
+        return $this->room;
+    }
+
+    public function setRoom(?room $room): self
+    {
+        $this->room = $room;
+
+        return $this;
+    }
+
+    /**
+     * @return Collection|speaker[]
+     */
+    public function getSpeaker(): Collection
+    {
+        return $this->speaker;
+    }
+
+    public function addSpeaker(speaker $speaker): self
+    {
+        if (!$this->speaker->contains($speaker)) {
+            $this->speaker[] = $speaker;
+        }
+
+        return $this;
+    }
+
+    public function removeSpeaker(speaker $speaker): self
+    {
+        if ($this->speaker->contains($speaker)) {
+            $this->speaker->removeElement($speaker);
+        }
 
         return $this;
     }

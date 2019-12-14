@@ -40,15 +40,40 @@ class __TwigTemplate_4e71ee375c5ef59a2a7d4e6e8d27c19e89fdb3f9801140aa02a3d9c00f4
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "home/home.html.twig"));
 
         // line 1
-        echo "<?html
-
+        echo "<!DOCTYPE html>
 <html>
-<head>
-  <title>Page Title</title>
-</head>
-    <body>
-        home PAGE
-    </body>
+  <head>
+    <title>Simple Map</title>
+    <meta name=\"viewport\" content=\"initial-scale=1.0\">
+    <meta charset=\"utf-8\">
+    <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 100%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div id=\"map\"></div>
+    <script>
+      var map;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: 41.178654, lng: -8.5973233},
+          zoom: 19
+        });
+      }
+    </script>
+    <script src=\"https://maps.googleapis.com/maps/api/js?key=AIzaSyDXIVRObK-Twu-ij5WtdZ9onYObRVmxl8k&callback=initMap\"
+    async defer></script>
+  </body>
 </html>
 ";
         
@@ -71,16 +96,41 @@ class __TwigTemplate_4e71ee375c5ef59a2a7d4e6e8d27c19e89fdb3f9801140aa02a3d9c00f4
 
     public function getSourceContext()
     {
-        return new Source("<?html
-
+        return new Source("<!DOCTYPE html>
 <html>
-<head>
-  <title>Page Title</title>
-</head>
-    <body>
-        home PAGE
-    </body>
+  <head>
+    <title>Simple Map</title>
+    <meta name=\"viewport\" content=\"initial-scale=1.0\">
+    <meta charset=\"utf-8\">
+    <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 100%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div id=\"map\"></div>
+    <script>
+      var map;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: 41.178654, lng: -8.5973233},
+          zoom: 19
+        });
+      }
+    </script>
+    <script src=\"https://maps.googleapis.com/maps/api/js?key=AIzaSyDXIVRObK-Twu-ij5WtdZ9onYObRVmxl8k&callback=initMap\"
+    async defer></script>
+  </body>
 </html>
-", "home/home.html.twig", "C:\\Users\\Iagoh\\Desktop\\open-cx-sg\\web_app\\sg_wp\\templates\\home\\home.html.twig");
+", "home/home.html.twig", "C:\\Users\\Operator1\\Documents\\GitHub\\open-cx-sg1\\open-cx-sg\\web_app\\sg_wp\\templates\\home\\home.html.twig");
     }
 }

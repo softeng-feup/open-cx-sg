@@ -227,6 +227,6 @@ class __TwigTemplate_266a6212a1d69d48c6ea2025df42704cdbbf1d2d9f436501ad4d773cecf
         {{ include('@Twig/base_js.html.twig') }}
     </body>
 </html>
-", "@Twig/layout.html.twig", "C:\\Users\\Iagoh\\Desktop\\open-cx-sg\\web_app\\sg_wp\\vendor\\symfony\\twig-bundle\\Resources\\views\\layout.html.twig");
+", "@Twig/layout.html.twig", "C:\\Users\\Operator1\\Documents\\GitHub\\open-cx-sg1\\open-cx-sg\\web_app\\sg_wp\\vendor\\symfony\\twig-bundle\\Resources\\views\\layout.html.twig");
     }
 }
