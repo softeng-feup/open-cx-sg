@@ -106,11 +106,15 @@ To better understand the context of the software system, we created a simple UML
 ![UML class diagram](img/UML-diagram.png)
 
 ## Architecture and Design
-The architecture of a software system encompasses the set of key decisions about its overall organization.
-
-A well written architecture document is brief but reduces the amount of time it takes new programmers to a project to understand the code to feel able to make modifications and enhancements.
-
-To document the architecture requires describing the decomposition of the system in their parts (high-level components) and the key behaviors and collaborations between them.
+  The software was divided in 2 parts: Back end and the Front end.
+  
+### BackEnd
+  Back end is composed by a python script to keep the database up to date and a MySql database. The data available for the presentation website was downloaded, processed and stored on the database. 
+  
+### The front end
+  Our aplication was build with symphony (PhP). 
+  
+In order to run the API, the machine on which the application will be executed must be prepared installing python3 and the libs described on the README.md inside python_request_data directory. The databases mysql and php & symphony to. 
 
 
 ### Logical architecture
