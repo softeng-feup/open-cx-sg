@@ -14,7 +14,7 @@ class homePage extends AbstractController
     /**
      * @Route("/home")
      */
-    public function number()
+    public function getHomePage()
     {
         
 

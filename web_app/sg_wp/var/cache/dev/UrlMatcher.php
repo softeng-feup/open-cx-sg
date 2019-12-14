@@ -13,9 +13,9 @@ return [
         '/_profiler/search_bar' => [[['_route' => '_profiler_search_bar', '_controller' => 'web_profiler.controller.profiler::searchBarAction'], null, null, null, false, false, null]],
         '/_profiler/phpinfo' => [[['_route' => '_profiler_phpinfo', '_controller' => 'web_profiler.controller.profiler::phpinfoAction'], null, null, null, false, false, null]],
         '/_profiler/open' => [[['_route' => '_profiler_open_file', '_controller' => 'web_profiler.controller.profiler::openAction'], null, null, null, false, false, null]],
-        '/incoming' => [[['_route' => 'app_incomingevents_page', '_controller' => 'App\\Controller\\IncomingEvents::page'], null, null, null, false, false, null]],
-        '/current' => [[['_route' => 'app_currentevents_number', '_controller' => 'App\\Controller\\currentEvents::number'], null, null, null, false, false, null]],
-        '/home' => [[['_route' => 'app_homepage_number', '_controller' => 'App\\Controller\\homePage::number'], null, null, null, false, false, null]],
+        '/incoming' => [[['_route' => 'app_incomingevents_getincomingeventspage', '_controller' => 'App\\Controller\\IncomingEvents::getIncomingEventsPage'], null, null, null, false, false, null]],
+        '/current' => [[['_route' => 'app_currentevents_getcurrenteventspage', '_controller' => 'App\\Controller\\currentEvents::getCurrentEventsPage'], null, null, null, false, false, null]],
+        '/home' => [[['_route' => 'app_homepage_gethomepage', '_controller' => 'App\\Controller\\homePage::getHomePage'], null, null, null, false, false, null]],
     ],
     [ // $regexpList
         0 => '{^(?'

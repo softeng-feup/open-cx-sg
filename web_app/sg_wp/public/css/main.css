@@ -5,7 +5,13 @@
     color: white;
     font-size: 30px;
 }
-#mapid
-{
-    height: 100%;
+#mapid {
+    position: relative;
+    border: 1px solid black;
+    border-radius: 8px;
+    height: 90%;  /* or as desired */
+    width: 100%;  /* This means "100% of the width of its container", the .col-md-8 */
+}
+.container{
+    width: 100%;
 }
