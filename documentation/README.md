@@ -190,19 +190,21 @@ There are a total of 5 iterations, each lasting two weeks. Before each iteration
 This was our Trello board at the beginning of the project.
 ![Start_PM](img/iteration0.JPG)
 
-This was our Trello board before the first iteration.
+This was our Trello board for the first iteration.
 ![FirstIteration_PM](img/iteration1.JPG)
 
-This was our Trello board before the second iteration.
+This was our Trello board for the second iteration.
 ![SecondIteration_PM](img/iteration2.JPG)
 
-This was our Trello board before the third iteration.
+This was our Trello board for the third iteration.
 ![ThirdIteration_PM](img/iteration3.JPG)
 
-This was our Trello board before the fourth iteration.
+This was our Trello board for the fourth iteration.
 ![FourthIteration_PM](img/iteration4.png)
 
-This is our current Trello board:
+This was our Trello board for the fifth iteration.
+![FifthIteration_PM](img/iteration5.JPG)
+
 
 
 Here you can find the link to our Trello Board:
