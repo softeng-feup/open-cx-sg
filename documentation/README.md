@@ -43,8 +43,10 @@ Confmark. Your Conference Landmark.
 Real-time overview of all necessary information about the conference at a glance presented on a screen in the entrance hall or easily on your smartphone or personal computer.
 
 ### Elevator Pitch
-Participants of a conference are often frustrated by the effort it takes to find the right room, remember when presentations start and if there is still a place for them. Confmark solves this problem by providing all necessary information about the conference. With Confmark participants can find the available number of free seats, the room number, the timeslots as well as a short description of the lecturer and the presentation. A map of the building shows where to find all facilities and services. Our solution can be either accessed online or directly at the day of the conference on a big screen in the entrance hall. As the information is always up-to-date participants of the conference save time by always knowing where to go at which time. 
-Confmark makes the conference stay as comfortable as possible.
+Hi, we are a young team sponsored by FEUP university and we know how frustrating it can be when you're at a conference and you can't figure out where to go, at what time and if there are still seats available for the presentation you want to see. The answer to those problems has now a name: Confmark.
+With Confmark all the main information about the conference such as the timeslots, rooms codes, number of available seats as well as a brief description of the speakers and the presentations are displayed on a large screen. This makes it easy to spot the information immediately by all the participants, either accessed online or directly at the conference.
+Forget all the time wasted deciphering small guides or asking people around you for those information now accessible at a glance, Confmark will make the conference to stay as comfortable as possible by always advising you where to go at which time. 
+
 
 ## Requirements
 
@@ -106,40 +108,45 @@ To better understand the context of the software system, we created a simple UML
 ![UML class diagram](img/UML-diagram.png)
 
 ## Architecture and Design
-The software was divided into 2 parts: back-end and front-end.
+The software is divided into 2 parts: back-end and front-end.
   
 ### Back-end
 The back-end is composed by a python script keeping the database up to date and a MySQL database. 
-The data available on the presentation's website was downloaded, processed and stored in the database. 
+The data available on the presentation's website are downloaded, processed and stored in the database. 
   
 ### Front-end
-Our application was built with symphony (PhP). 
+Our application is built with symphony (PhP). 
   
-In order to run the API, the machine on which the application will be executed must be prepared installing python3 and the libs described on the README.md inside python_request_data directory. The database MySLQ and php & symphony need also be installed.
+In order to run the API, the machine on which the application will be executed must be prepared installing python3 and the libs described on the README.md document inside python_request_data directory. The database MySLQ and PhP & Symphony need also to be installed.
 
 ### Logical architecture
 This is the logical architecture of our project.
 ![logical arch](img/execution_fluxogram_style_patch.jpeg)
 
-Basically, there is a python script updating the database every 5 minutes and a flutter application, querrying the database and showing it to the users.
+There is a python script updating the database every 5 minutes and a flutter application, querying the database and showing it to the users.
 
 ### Physical architecture
 
 ![logical arch](img/deploymant.jpg)
 
 
-Firstly, a python script is running on our server querry and filters the data. Then, the data is send to a database. The database technology isn't defined yet. 
+Firstly, the python script running on our server queries and filters the data. Then, the data are sent to the database. The database technology isn't defined yet. 
 
-The user interface is written in flutter. Its a basic application to show the data in a very intuitive way. 
+The user interface is written in flutter. It is a basic application to show the data in a very intuitive way. 
 
 
 ### Prototype
 
-Our home screen is no interactive screen. 
-To test our product, we showed the mockups to some users and asked them questions on what they thought and what they understood.
+Our home screen is not an interactive screen. 
+To test our product, we showed the mockups to some users and asked them questions about what they understood and their opinions if they had any useful feedback.
 
 ## Implementation
-Our implementation will be divided in 3 parts. The first part will be the database modeling. As soon as the application can querry the data and show it without any bugs, the application will querry data from the presentation's website, filter it and put it into a NO SQL database, containing a Json. 
+The implementation is divided in 3 steps:
+* Modelling of the database;
+* The applications queries data from the conference's website and filters the data if any bug appears;
+* The application can finally upload into a NO SQL database, containing a Json.
+
+
 
 ```java
 { 
@@ -153,23 +160,23 @@ Our implementation will be divided in 3 parts. The first part will be the databa
 };
 ```
 
-Afterwards, we will divide the activities in 2 parallel branches. One branch is the python script and the database implementation, the second branch is the interface implementation in flutter. 
+Afterwards, we divided the activities in 2 parallel branches. One branch regards the python script and the database implementation, the other regards the interface implementation on flutter. 
 
 
 ### Part 1 - Python and Database
-* Querry data from web
-* Make a class with useful functions to deal with the data format
-* Make a database connector class
+* Query data from website
+* Create a class with useful functions to deal with the data format
+* Create a database connector class
 * Implement the database
 * Implement the tools to test the database, querry data and print it
-* Make a documentation of the script and the tools
+* Write a documentation of the script and the tools
 
 ### Part 2 - Flutter app 
 
-* Make the widget class
-* Implement a homescreen showing the widgets 
+* Create the widget class
+* Implement an homescreen showing the widgets 
 * Implement a database connector
-* Process the data and put it in a useful format inside the application
+* Process the data and put them in a useful format inside the application
 * Test the interface
 * Implement the automatically screen change every 1 minute
 * Implement the navigation using buttons
@@ -183,13 +190,13 @@ Then, the three buttons will be tested. When clicked, the screen has to change, 
 
 
 ## Configuration and change management
-Configuration and change management are key activities to control change to, and maintain the integrity of, a project’s artifacts (code, models, documents).
+Configuration and change management are key activities to control changes of project’s artifacts (code, models, documents) while maintaining their integrity.
 
-For the purpose of ESOF, we will use a very simple approach, just to manage feature requests, bug fixes, and improvements, using GitHub issues and following the GitHub flow.
+For the purpose of ESOF, we used a very simple approach, just to manage feature requests, bug fixes, and improvements, using GitHub issues and following the GitHub flow.
 
 ## Project management
-We document the progress of our project in Trello. 
-There are a total of 5 iterations, each lasting two weeks. Before each iteration, we determine together which tasks we can complete during the iteration and who takes over the tasks. All tasks are added to the column 'To Do'. As soon as someone is working on the task, it is moved to the 'Doing' column. Once a task is done, it moves to the 'Done' column. In 'Useful links' we collect links we often use.
+We documented the progress of our project on Trello. 
+There are 5 iterations, each lasting two weeks. Before each iteration, we determined together which tasks had to be completed during the iteration and who takes over each task. All tasks are added to the column 'To Do'. As soon as someone was working on the task, it was moved to the 'Doing' column. Once a task was completed, it was moved to the 'Done' column. In 'Useful links' we collected links we often used.
 
 This was our Trello board at the beginning of the project.
 ![Start_PM](img/iteration0.JPG)
