@@ -106,16 +106,16 @@ To better understand the context of the software system, we created a simple UML
 ![UML class diagram](img/UML-diagram.png)
 
 ## Architecture and Design
-  The software was divided in 2 parts: Back end and the Front end.
+The software was divided into 2 parts: back-end and front-end.
   
-### BackEnd
-  Back end is composed by a python script to keep the database up to date and a MySql database. The data available for the presentation website was downloaded, processed and stored on the database. 
+### Back-end
+The back-end is composed by a python script keeping the database up to date and a MySQL database. 
+The data available on the presentation's website was downloaded, processed and stored in the database. 
   
-### The front end
-  Our aplication was build with symphony (PhP). 
+### Front-end
+Our application was built with symphony (PhP). 
   
-In order to run the API, the machine on which the application will be executed must be prepared installing python3 and the libs described on the README.md inside python_request_data directory. The databases mysql and php & symphony to. 
-
+In order to run the API, the machine on which the application will be executed must be prepared installing python3 and the libs described on the README.md inside python_request_data directory. The database MySLQ and php & symphony need also be installed.
 
 ### Logical architecture
 This is the logical architecture of our project.
