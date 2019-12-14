@@ -40,103 +40,116 @@ class __TwigTemplate_b9e81937de560556f795aaf571a2d3ad04c7bad34e14cf945a7955d820e
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "incoming/incoming.html.twig"));
 
         // line 1
-        echo "<html>
+        echo "<!doctype html>
+<html lang=\"en\">
 <head>
-    <link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css\" integrity=\"sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T\" crossorigin=\"anonymous\">
-    <script src=\"https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js\" integrity=\"sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM\" crossorigin=\"anonymous\"></script>
-    <script src=\"https://unpkg.com/leaflet@1.5.1/dist/leaflet.js\"
-            integrity=\"sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og==\"
-            crossorigin=\"\"></script>
+    <meta charset=\"UTF-8\">
+    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">
+    <script>document.getElementsByTagName(\"html\")[0].className += \" js\";</script>
     <link rel=\"stylesheet\" href=\"";
-        // line 8
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("css/main.css"), "html", null, true);
-        echo "\" />
+        // line 7
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("css/style.css"), "html", null, true);
+        echo "\">
+    <title>Incoming events</title>
 </head>
 <body>
-<h1>
-    <nav class=\"navbar navbar-expand-sm bg-light\">
-        <div class=\"container-fluid\">
-            <div class=\"navbar-header\">
-                <a class=\"navbar-brand\" href=\"#\">Confmark</a>
-            </div>
-        </div>
-        <div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\">
+<header class=\"cd-main-header text-center flex flex-column flex-center\">
+    
 
-            <ul class=\"navbar-nav mr-auto\">
+    <h1 class=\"text-xl\">Incoming events</h1>
+</header>
 
-                <li class=\"nav-item\">
-                    <h4>";
-        // line 23
-        echo twig_escape_filter($this->env, twig_date_format_filter($this->env, "now", "m/d/Y H:i:s"), "html", null, true);
-        echo "</h4>
-                </li>
-            </ul>
-
-        </div>
-    </nav>
-    <div class=\"container-fluid\">
-        <table class=\"table\">
-            <thead class=\"thead-dark\">
-            <tr>
-                <th scope=\"col\">#</th>
-                <th scope=\"col\">Speaker 1</th>
-                <th scope=\"col\">Speaker 2</th>
-                <th scope=\"col\">Speaker 3</th>
-                <th scope=\"col\">Room</th>
-                <th scope=\"col\">Title of the presentation</th>
-                <th scope=\"col\">Summary</th>
-                <th scope=\"col\">Start time</th>
-                <th scope=\"col\">End time</th>
-                <th scope=\"col\">hashtag</th>
-            </tr>
-            </thead>
-            <tbody>
-            ";
+<div class=\"cd-schedule cd-schedule--loading margin-top-lg margin-bottom-lg js-cd-schedule\">
+    <div class=\"cd-schedule__timeline\">
+        <ul>
+            <li><span>09:00</span></li>
+            <li><span>09:30</span></li>
+            <li><span>10:00</span></li>
+            <li><span>10:30</span></li>
+            <li><span>11:00</span></li>
+            <li><span>11:30</span></li>
+            <li><span>12:00</span></li>
+            <li><span>12:30</span></li>
+            <li><span>13:00</span></li>
+            <li><span>13:30</span></li>
+            <li><span>14:00</span></li>
+            <li><span>14:30</span></li>
+            <li><span>15:00</span></li>
+            <li><span>15:30</span></li>
+            <li><span>16:00</span></li>
+            <li><span>16:30</span></li>
+            <li><span>17:00</span></li>
+            <li><span>17:30</span></li>
+            <li><span>18:00</span></li>
+        </ul>
+    </div> <!-- .cd-schedule__timeline -->
+    <div class=\"cd-schedule__events\">
+        <ul>
+            <li class=\"cd-schedule__group\">
+                <div class=\"cd-schedule__top-info\"><span>Monday</span></div>
+                <ul>
+                ";
         // line 46
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable((isset($context["events"]) || array_key_exists("events", $context) ? $context["events"] : (function () { throw new RuntimeError('Variable "events" does not exist.', 46, $this->source); })()));
         foreach ($context['_seq'] as $context["_key"] => $context["event"]) {
             // line 47
-            echo "                <tr>
-                    <td>";
+            echo "            <li class=\"cd-schedule__event\">
+              <a data-start=\"";
             // line 48
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["event"], "id", [], "any", false, false, false, 48), "html", null, true);
-            echo "</td>
-                    <td>";
+            echo twig_escape_filter($this->env, twig_date_format_filter($this->env, twig_get_attribute($this->env, $this->source, $context["event"], "starttime", [], "any", false, false, false, 48), "H:i:s"), "html", null, true);
+            echo "\" data-end=\"";
+            echo twig_escape_filter($this->env, twig_date_format_filter($this->env, twig_get_attribute($this->env, $this->source, $context["event"], "endtime", [], "any", false, false, false, 48), "H:i:s"), "html", null, true);
+            echo "\" data-content=\"event-abs-circuit\" data-event=\"event-1\" href=\"#0\">
+                <em class=\"cd-schedule__name\">";
             // line 49
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["event"], "idroom", [], "any", false, false, false, 49), "html", null, true);
-            echo "</td>
-                    <td>";
-            // line 50
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["event"], "title", [], "any", false, false, false, 50), "html", null, true);
-            echo "</td>
-                    <td>";
-            // line 51
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["event"], "summary", [], "any", false, false, false, 51), "html", null, true);
-            echo "</td>
-                    <td>";
-            // line 52
-            echo twig_escape_filter($this->env, twig_date_format_filter($this->env, twig_get_attribute($this->env, $this->source, $context["event"], "starttime", [], "any", false, false, false, 52), "Y-m-d"), "html", null, true);
-            echo "</td>
-                    <td>";
-            // line 53
-            echo twig_escape_filter($this->env, twig_date_format_filter($this->env, twig_get_attribute($this->env, $this->source, $context["event"], "endtime", [], "any", false, false, false, 53), "Y-m-d"), "html", null, true);
-            echo "</td>
-                    <td>";
-            // line 54
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["event"], "hashtag", [], "any", false, false, false, 54), "html", null, true);
-            echo "</td>
-                </tr>
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["event"], "title", [], "any", false, false, false, 49), "html", null, true);
+            echo "</em>
+                <em class=\"cd-schedule__name\"></em>
+              </a>
+            </li>
+                
+                
+                              
+            </li>
             ";
         }
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['event'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
         // line 57
-        echo "            </tbody>
-        </table>
+        echo " 
+        </ul>
     </div>
-</h1>
+    <div class=\"cd-schedule-modal\">
+        <header class=\"cd-schedule-modal__header\">
+            <div class=\"cd-schedule-modal__content\">
+                <span class=\"cd-schedule-modal__date\"></span>
+                <h3 class=\"cd-schedule-modal__name\"></h3>
+            </div>
+
+            <div class=\"cd-schedule-modal__header-bg\"></div>
+        </header>
+
+        <div class=\"cd-schedule-modal__body\">
+            <div class=\"cd-schedule-modal__event-info\"></div>
+            <div class=\"cd-schedule-modal__body-bg\"></div>
+        </div>
+
+        <a href=\"#0\" class=\"cd-schedule-modal__close text-replace\">Close</a>
+    </div>
+
+    <div class=\"cd-schedule__cover-layer\"></div>
+</div> <!-- .cd-schedule -->
+
+<script src=\"";
+        // line 81
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("js/util.js"), "html", null, true);
+        echo "\"></script> <!-- util functions included in the CodyHouse framework -->
+<script src=\"";
+        // line 82
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("js/main.js"), "html", null, true);
+        echo "\"></script>
 </body>
 </html>";
         
@@ -159,71 +172,93 @@ class __TwigTemplate_b9e81937de560556f795aaf571a2d3ad04c7bad34e14cf945a7955d820e
 
     public function getDebugInfo()
     {
-        return array (  136 => 57,  127 => 54,  123 => 53,  119 => 52,  115 => 51,  111 => 50,  107 => 49,  103 => 48,  100 => 47,  96 => 46,  70 => 23,  52 => 8,  43 => 1,);
+        return array (  151 => 82,  147 => 81,  121 => 57,  106 => 49,  100 => 48,  97 => 47,  93 => 46,  51 => 7,  43 => 1,);
     }
 
     public function getSourceContext()
     {
-        return new Source("<html>
+        return new Source("<!doctype html>
+<html lang=\"en\">
 <head>
-    <link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css\" integrity=\"sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T\" crossorigin=\"anonymous\">
-    <script src=\"https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js\" integrity=\"sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM\" crossorigin=\"anonymous\"></script>
-    <script src=\"https://unpkg.com/leaflet@1.5.1/dist/leaflet.js\"
-            integrity=\"sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og==\"
-            crossorigin=\"\"></script>
-    <link rel=\"stylesheet\" href=\"{{ asset('css/main.css') }}\" />
+    <meta charset=\"UTF-8\">
+    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">
+    <script>document.getElementsByTagName(\"html\")[0].className += \" js\";</script>
+    <link rel=\"stylesheet\" href=\"{{ asset('css/style.css') }}\">
+    <title>Incoming events</title>
 </head>
 <body>
-<h1>
-    <nav class=\"navbar navbar-expand-sm bg-light\">
-        <div class=\"container-fluid\">
-            <div class=\"navbar-header\">
-                <a class=\"navbar-brand\" href=\"#\">Confmark</a>
-            </div>
-        </div>
-        <div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\">
+<header class=\"cd-main-header text-center flex flex-column flex-center\">
+    
 
-            <ul class=\"navbar-nav mr-auto\">
+    <h1 class=\"text-xl\">Incoming events</h1>
+</header>
 
-                <li class=\"nav-item\">
-                    <h4>{{ \"now\"|date(\"m/d/Y H:i:s\") }}</h4>
-                </li>
-            </ul>
-
-        </div>
-    </nav>
-    <div class=\"container-fluid\">
-        <table class=\"table\">
-            <thead class=\"thead-dark\">
-            <tr>
-                <th scope=\"col\">#</th>
-                <th scope=\"col\">Speaker 1</th>
-                <th scope=\"col\">Speaker 2</th>
-                <th scope=\"col\">Speaker 3</th>
-                <th scope=\"col\">Room</th>
-                <th scope=\"col\">Title of the presentation</th>
-                <th scope=\"col\">Summary</th>
-                <th scope=\"col\">Start time</th>
-                <th scope=\"col\">End time</th>
-                <th scope=\"col\">hashtag</th>
-            </tr>
-            </thead>
-            <tbody>
-            {% for event in events %}
-                <tr>
-                    <td>{{ event.id }}</td>
-                    <td>{{ event.idroom }}</td>
-                    <td>{{ event.title }}</td>
-                    <td>{{ event.summary }}</td>
-                    <td>{{ event.starttime |date('Y-m-d')}}</td>
-                    <td>{{ event.endtime |date('Y-m-d')}}</td>
-                    <td>{{ event.hashtag }}</td>
-                </tr>
-            {% endfor %}
-            </tbody>
-        </table>
+<div class=\"cd-schedule cd-schedule--loading margin-top-lg margin-bottom-lg js-cd-schedule\">
+    <div class=\"cd-schedule__timeline\">
+        <ul>
+            <li><span>09:00</span></li>
+            <li><span>09:30</span></li>
+            <li><span>10:00</span></li>
+            <li><span>10:30</span></li>
+            <li><span>11:00</span></li>
+            <li><span>11:30</span></li>
+            <li><span>12:00</span></li>
+            <li><span>12:30</span></li>
+            <li><span>13:00</span></li>
+            <li><span>13:30</span></li>
+            <li><span>14:00</span></li>
+            <li><span>14:30</span></li>
+            <li><span>15:00</span></li>
+            <li><span>15:30</span></li>
+            <li><span>16:00</span></li>
+            <li><span>16:30</span></li>
+            <li><span>17:00</span></li>
+            <li><span>17:30</span></li>
+            <li><span>18:00</span></li>
+        </ul>
+    </div> <!-- .cd-schedule__timeline -->
+    <div class=\"cd-schedule__events\">
+        <ul>
+            <li class=\"cd-schedule__group\">
+                <div class=\"cd-schedule__top-info\"><span>Monday</span></div>
+                <ul>
+                {% for event in events %}
+            <li class=\"cd-schedule__event\">
+              <a data-start=\"{{ event.starttime |date('H:i:s')}}\" data-end=\"{{ event.endtime |date('H:i:s')}}\" data-content=\"event-abs-circuit\" data-event=\"event-1\" href=\"#0\">
+                <em class=\"cd-schedule__name\">{{event.title}}</em>
+                <em class=\"cd-schedule__name\"></em>
+              </a>
+            </li>
+                
+                
+                              
+            </li>
+            {% endfor %} 
+        </ul>
     </div>
-</h1>
+    <div class=\"cd-schedule-modal\">
+        <header class=\"cd-schedule-modal__header\">
+            <div class=\"cd-schedule-modal__content\">
+                <span class=\"cd-schedule-modal__date\"></span>
+                <h3 class=\"cd-schedule-modal__name\"></h3>
+            </div>
+
+            <div class=\"cd-schedule-modal__header-bg\"></div>
+        </header>
+
+        <div class=\"cd-schedule-modal__body\">
+            <div class=\"cd-schedule-modal__event-info\"></div>
+            <div class=\"cd-schedule-modal__body-bg\"></div>
+        </div>
+
+        <a href=\"#0\" class=\"cd-schedule-modal__close text-replace\">Close</a>
+    </div>
+
+    <div class=\"cd-schedule__cover-layer\"></div>
+</div> <!-- .cd-schedule -->
+
+<script src=\"{{ asset('js/util.js') }}\"></script> <!-- util functions included in the CodyHouse framework -->
+<script src=\"{{ asset('js/main.js') }}\"></script>
 </body>
 </html>", "incoming/incoming.html.twig", "C:\\Users\\Operator1\\Documents\\GitHub\\open-cx-sg1\\open-cx-sg\\web_app\\sg_wp\\templates\\incoming\\incoming.html.twig");
     }

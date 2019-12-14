@@ -43,7 +43,7 @@ class __TwigTemplate_4e71ee375c5ef59a2a7d4e6e8d27c19e89fdb3f9801140aa02a3d9c00f4
         echo "<!DOCTYPE html>
 <html>
   <head>
-    <title>Simple Map</title>
+    <title>Homepage</title>
     <meta name=\"viewport\" content=\"initial-scale=1.0\">
     <meta charset=\"utf-8\">
     <style>
@@ -99,7 +99,7 @@ class __TwigTemplate_4e71ee375c5ef59a2a7d4e6e8d27c19e89fdb3f9801140aa02a3d9c00f4
         return new Source("<!DOCTYPE html>
 <html>
   <head>
-    <title>Simple Map</title>
+    <title>Homepage</title>
     <meta name=\"viewport\" content=\"initial-scale=1.0\">
     <meta charset=\"utf-8\">
     <style>
