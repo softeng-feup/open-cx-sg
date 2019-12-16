@@ -60,7 +60,7 @@ Forget all the time wasted deciphering small guides or asking people around you 
 In order to create a user story map, we firstly collected all user stories that we want to integrate into our project.
 
 The user stories can be find [here.](https://miro.com/app/board/o9J_kw8YdVc=/)
-![User-story](img/User-story.png)
+![User-story](img/userstoriesmap.jpg)
 
 
 The sticky notes represent the user stories. 
