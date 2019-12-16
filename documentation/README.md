@@ -53,7 +53,7 @@ Forget all the time wasted deciphering small guides or asking people around you 
 ### Use case diagram
 
 
-![Use cases diagram](img/use_cases.jpg) 
+![Use cases diagram](img/umldiagnew.jpg) 
 
 ### User stories
 
