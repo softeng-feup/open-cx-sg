@@ -96,12 +96,70 @@ An additional idea was that the participants of the conference could tweet somet
 
 ![Mock-up](img/Mockup-SocialMedia.png)
 
-#### Acceptance tests. 
-The scenarios of the acceptance tests can be found [here.](
-https://docs.google.com/document/d/19Oh2CPSlyLhVsH65iyrFKrGMntYt6AbZ7Bw0rdgcYr4/edit?usp=sharing)
+### Acceptance tests. 
+#### Feature: Map of the building
+In order to participate in the conference I want to be given information about the building
+Scenario: 
+* Given I have looked at the information screen 
+I can see my current position on the map of the building 
+Feature: 
+* Given I have looked looked at the information screen 
+I can see where should I go to the room the current presentation is taking place 
 
-Currently we are working on the must have scenarios, things which are the most crucial to the user. 
+#### Feature: Timetable of the current presentations 
+ In order to participate in the conference I want to be given information about the presentations taking place at the moment
+Scenario: 
+* Given I have looked at the information screen 
+I can see the starting hour of the presentation and the ending hour of the presentation 
 
+#### Feature: Available seats at the presentation
+In order to participate in the presentation I want to know if there are seats available 
+Scenario: 
+* Given I have looked at the information screen 
+And then on the current timetable 
+I can see the number of seats available at the particular presentation 
+
+#### Feature: Brief description of the presentation 
+In order to participate in the presentation I want to know what the given presentation is about 
+Scenario: 
+* Given I have looked at the information screen 
+And then on the current timetable 
+* Given that the there are still seats available 
+I can see who is the speaker 
+And then read a description of the particular presentation 
+
+#### Feature: Map of the building
+Scenario: In order to participate in the conference I want to be given information about the building
+ 
+* Given that customer comes to the conference
+when he looks at the information screen
+then he see his position in the building
+and he see where the room where the current presentation is taking place is
+
+#### Feature: Timetable of the current presentations 
+Scenario: In order to participate in the conference I want to be given information about the presentations taking place at the moment
+ 
+* Given that customer is on the conference
+when he looks at the information screen
+then he see the starting hour of the presentation
+and he see the ending hour of the presentation
+
+#### Feature: Available seats at the presentation
+Scenario: In order to participate in the presentation I want to know if there are seats available 
+ 
+* Given that customer is on the conference
+when he looks at the information screen
+And looks at the name of the particular presentation
+then he see the number of seats available
+ 
+#### Feature: Brief description of the presentation 
+Scenario: In order to participate in the presentation I want to know what the given presentation is about
+ 
+* Given that customer is on the conference
+when he looks at the information screen
+and he looks on the current timetable 
+then he see who is the speaker 
+and he see short description of the particular presentation 
 ### Domain model
 To better understand the context of the software system, we created a simple UML class diagram with all key concepts (names, attributes) and relationships involved of the problem domain addressed by our module.
 
